@@ -1,0 +1,102 @@
+
+<script src="js/jquery.slim.js"> </script>
+<script src="js/popper.js"> </script>
+<script src="js/bootstrap.js"> </script>
+<script src="js/scripts.js"> </script>
+<script>
+  new WOW({
+  	scrollContainer: "#container-wrapper"
+  }).init();
+  
+</script>
+<script>
+  $("#phonenumber").intlTelInput({
+  	defaultCountry: 'sg',
+  	preferredCountries: ['sg']
+  });
+  
+</script>
+<script>
+  $(".members-slider").slick({
+  dots: true,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [{
+  breakpoint: 576,
+  settings: {
+  slidesToShow: 1,
+  }
+  },
+  {
+  breakpoint: 768,
+  settings: {
+  slidesToShow: 2,
+  }
+  }]
+  });
+  
+</script>
+<script>
+  $(".testimonial-slider").slick({
+  dots: true,
+  arrows: true,
+  nextArrow: '<i class="ic s-40 arrow-right"></i>',
+  prevArrow: '<i class="ic s-40 arrow-left"></i>',
+  appendArrows: '.slick-list',
+  infinite: true,
+  slidesToShow: 1,
+  centerPadding: '300px',
+  cssEase: 'linear',
+  slidesToScroll: 1,
+  });
+  $('.testimonial-slider .slick-list').addClass('card block rounded border-none white shadow-smooth')
+  
+</script>
+<script>
+  $(".pic-slider").slick({
+  dots:false,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 1,
+  autoplay: true,
+  fade: true,
+  centerPadding: '100px',
+  cssEase: 'linear',
+  slidesToScroll: 1,
+  //- adaptiveHeight: true,
+  //- adaptiveHeight: 'true'
+  });
+  
+</script>
+<script>
+  $(".banner-slider").slick({
+  dots:true,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 1,
+  autoplay: true,
+  fade: true,
+  centerPadding: '100px',
+  cssEase: 'linear',
+  slidesToScroll: 1,
+  //- dotsClass: 'tuan'
+  //- adaptiveHeight: true,
+  //- adaptiveHeight: 'true'
+  });
+  
+</script>
+<script>
+  $(".video-slider").slick({
+  dots:true,
+  arrows: false,
+  infinite: true,
+  slidesToShow: 1,
+  autoplay: false,
+  fade: true,
+  centerPadding: '100px',
+  cssEase: 'linear',
+  slidesToScroll: 1,
+  });
+</script>
