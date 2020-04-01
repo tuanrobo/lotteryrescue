@@ -2,8 +2,16 @@
 .font-weight-extrabold {
   font-weight: 800; }
 
+.btn-primary {
+  background-color: #00a8cc;
+  border: #00a8cc; }
+
 body, html {
-  height: 100%; }
+  height: 100%;
+  background-color: #142850; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
+
+a {
+  color: #00a8cc; }
