@@ -2,13 +2,16 @@
 .font-weight-extrabold {
   font-weight: 800; }
 
+form label {
+  font-size: 20px;
+  font-weight: 800; }
+  form label.form-check-label {
+    font-size: small;
+    font-weight: normal; }
+
 .btn-primary {
   background-color: #00a8cc;
   border: #00a8cc; }
-
-body, html {
-  height: 100%;
-  background-color: #142850; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
