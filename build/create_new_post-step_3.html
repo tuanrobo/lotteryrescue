@@ -11,7 +11,7 @@
   <body class="bg-light">
     <header class="shadow-sm border-bottom bg-white">
       <nav class="navbar navbar-expand-xl">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons" style="font-size: 40px">loyalty</i><span class="font-weight-bold ml-2">Giải Cứu Vé Số</span></a>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">Charity Information Hub</small></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span><span class="navbar-toggler-icon"></span><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse" id="top-menu">
             <ul class="navbar-nav ml-auto list-unstyled">
@@ -24,23 +24,31 @@
     <section class="pt-5">
       <div class="container">
         <div class="row">
-          <div class="col-8 mx-auto card p-5 shadow border-0">
-            <h2 class="mb-5">Chọn loại để cho</h2>
+          <div class="col-12 text-center mb-3">
+            <h3>Thông tin cần cho</h3>
+          </div>
+          <div class="col-12 col-md-8 mx-auto mb-5">
+            <ul class="progressbar list-unstyled">
+                  <li class="finished"><small>Món cho</small></li>
+                  <li class="finished"><small>Địa chỉ</small></li>
+                  <li class="active"><small>Hoàn thành</small></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-8 mx-auto card p-5 shadow border-0 mb-5">
             <form>
-              <div class="form-group form-check">
-                <input class="form-check-input" id="type1" type="checkbox">
-                <label class="form-check-label" for="type1">Thực phẩm</label><small class="form-text text-muted" id="emailHelp">Đồ ăn, thức uống,...</small>
-              </div>
-              <div class="form-group form-check">
-                <input class="form-check-input" id="type2" type="checkbox">
-                <label class="form-check-label" for="type2">Quần áo</label><small class="form-text text-muted" id="emailHelp">Quần, áo...</small>
-              </div>
-              <div class="form-group form-check">
-                <input class="form-check-input" id="type2" type="checkbox">
-                <label class="form-check-label" for="type2">Đồ dùng sinh hoạt</label><small class="form-text text-muted" id="emailHelp">Thau chậu, chén bát, linh tinh...</small>
-              </div>
-              <div class="d-flex justify-content-between"><a class="btn btn-link" href="#">Thoát</a>
-                <button class="btn btn-lg btn-primary" type="submit">Tiếp tục</button>
+              <div class="row">
+                <div class="col-12 mb-5">
+                  <h4 class="mb-4">Xem lại								</h4>
+                  <h5>Thực phẩm: </h5>
+                  <p>Gạo / 10kg</p>
+                  <h5>Thông tin nhận hàng:</h5>
+                  <p>anh Khang</p>
+                  <p>Số điện thoại: 090837242</p>
+                  <p>Địa chỉ nhận: </p>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex justify-content-between"><a class="btn btn-link" href="create_new_post-step_2.html">Quay lại </a><a class="btn btn-lg btn-primary" href="create_new_post-step-2.html">Hoàn thành</a></div>
+                </div>
               </div>
             </form>
           </div>
