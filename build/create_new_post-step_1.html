@@ -38,38 +38,67 @@
             <form>
               <div class="row">
                 <div class="col-12 mb-5">
-                  <h4 class="mb-4">Chọn loại để cho</h4>
-                  <div class="form-group row mb-3">
-                    <div class="form-check col-12 mb-3">
-                      <input class="form-check-input" id="type1" type="checkbox" checked>
-                      <label class="form-check-label" for="type1">Thực phẩm</label><small class="form-text text-muted" id="emailHelp">Đồ ăn, thức uống,...</small>
-                    </div>
-                    <div class="col-12">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="form-group">
-                            <label>Số lượng</label>
-                            <input class="form-control" type="number" placeholder="0">
-                          </div>
+                  <h4 class="mb-5 border-bottom pb-4">Chọn loại để cho</h4>
+                  <div class="accordion" id="goodsTypes">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <div class="form-group form-check mb-0">
+                          <input class="form-check-input" id="type1" type="checkbox" checked>
+                          <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Thực phẩm</label>
                         </div>
-                        <div class="col-md-8">
-                          <div class="form-group">
-                            <label>Mô tả</label>
-                            <textarea class="form-control"></textarea>
+                      </div>
+                      <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#goodsTypes">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+                                <label>Loại thực phẩm</label>
+                                <input class="form-control" type="text" placeholder="vd: Gạo" value="gạo">
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label>Số lượng</label>
+                                <input class="form-control" type="number" placeholder="0" value="10">
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="form-group">
+                                <label>Đơn vị</label>
+                                <select class="form-control">
+                                  <option>Kg</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button class="btn btn-link">Thêm loại thực phẩm</button>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <hr>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" id="type2" type="checkbox">
-                    <label class="form-check-label" for="type2">Quần áo</label><small class="form-text text-muted" id="emailHelp">Quần, áo...</small>
-                  </div>
-                  <hr>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" id="type3" type="checkbox">
-                    <label class="form-check-label" for="type3">Đồ dùng sinh hoạt</label><small class="form-text text-muted" id="emailHelp">Thau chậu, chén bát, linh tinh...								</small>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <div class="form-group form-check mb-0">
+                          <input class="form-check-input" id="type2" type="checkbox">
+                          <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quần áo</label>
+                        </div>
+                      </div>
+                      <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#goodsTypes">
+                        <div class="card-body">Quần áo												</div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <div class="form-group form-check mb-0">
+                          <input class="form-check-input" id="type3" type="checkbox">
+                          <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Đồ dùng sinh hoạt</label>
+                        </div>
+                      </div>
+                      <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#goodsTypes">
+                        <div class="card-body">Content 3																							</div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-12">
