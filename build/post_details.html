@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Chi tiết</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
+  </head>
+  <body class="bg-light">
+    <header class="shadow-sm border-bottom bg-white">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
+          <div class="collapse navbar-collapse" id="top-menu">
+            <form class="form-inline">
+              <div class="input-group">
+                <select class="custom-select">
+                  <option>Thành phố</option>
+                </select>
+                <select class="custom-select">
+                  <option>Quận						</option>
+                </select>
+                <select class="custom-select">
+                  <option>Phường</option>
+                </select>
+                <div class="input-group-append">
+                  <button class="btn btn-primary d-flex"><i class="material-icons">search</i></button>
+                </div>
+              </div>
+            </form>
+            <ul class="navbar-nav ml-auto list-unstyled">
+              <li class="list-inline-item"><a class="btn btn-sm btn-success" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
+              <li class="list-inline-item"><a class="btn btn-sm btn-outline-secondary" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-5">
+            <div class="d-flex justify-content-between mb-5">
+              <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <form>
+              <div class="form-group">
+                <label>Địa chỉ Email</label>
+                <input class="form-control form-control-lg" type="email" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label>Nhập mật khẩu</label>
+                <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
+              </div>
+              <div class="form-group form-check">
+                <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah</label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                <button class="btn btn-lg btn-primary" type="submit">Đăng Ký			</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-3 p-sm-5">
+            <div class="row">
+              <div class="col-12">
+                <div class="d-flex justify-content-between mb-5">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+              </div>
+              <div class="col-12">
+                <form>
+                  <div class="form-group">
+                    <label>Số điện thoại</label>
+                    <input class="form-control form-control-lg" type="number">
+                  </div>
+                  <div class="form-group">
+                    <label>Mật khẩu</label>
+                    <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
+                  </div>
+                  <div class="d-flex justify-content-between mb-4"><a class="btn btn-link" href="#">Quên mật khẩu?</a>
+                    <button class="btn btn-lg btn-primary" type="submit">Đăng Nhập</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                  <div class="col d-flex align-items-center"><small class="text-muted mx-auto">Hoặc</small></div>
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <button class="btn btn-lg btn-primary mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
+              </div>
+              <div class="col-12"><a href="user-management.html">Link dẫn vào trang quản lý sau khi đăng nhập (Dev xoá phần này)</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="mb-5 d-flex">Nhà giải cứu mới</h4>
+                <p>Hiện mình đang có 10kg gạo cần gửi đến các gia đình nghèo khổ, ưu tiên các bạn thiện nguyện khu vực quận Phú Nhuận...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pl-md-4">
+            <div class="card w-100 shadow-sm p-md-4 p-3 mb-3">
+              <h3 class="mb-3">Anh Khang</h3>
+              <ul class="list-unstyled">
+                <li>Thành viên tích cực</li>
+                <li> <a href="#">Tài sản trong kho</a></li>
+              </ul><a class="btn btn-lg btn-primary" href="sign_up.html">Liên hệ với anh Khang</a>
+            </div>
+            <div class="card p-3">
+              <blockquote class="blockquote mb-0 card-body">
+                <p>Xin cám ơn anh Khang vì những đóng góp cho từ thiện!</p>
+                <footer class="blockquote-footer"><small class="text-muted">Someone famous in
+                    <cite title="Source Title">Source Title</cite></small></footer>
+              </blockquote>
+              <blockquote class="blockquote mb-0 card-body">
+                <p>Xin cám ơn anh Khang vì những đóng góp cho từ thiện!</p>
+                <footer class="blockquote-footer"><small class="text-muted">Someone famous in
+                    <cite title="Source Title">Source Title</cite></small></footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center pt-3">
+      <div class="container">
+        <ul class="list-unstyled">
+          <li class="list-inline-item"><a href="#">Về dự án</a></li>
+          <li class="list-inline-item"><a href="#">Liên Hệ</a></li>
+        </ul>
+        <p class="text-muted">"Mỗi đóng góp của bạn là một giọt nước giúp đất cằn nở hoa!</p>
+        <p><small class="text-black-50">Giải Cứu Vé Số © 2020			</small></p>
+      </div>
+    </footer>
+        <script src="js/jquery.slim.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
+  </body>
+</html>
