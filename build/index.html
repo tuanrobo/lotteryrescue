@@ -11,13 +11,25 @@
   <body class="bg-light">
     <header class="shadow-sm border-bottom bg-white">
       <nav class="navbar navbar-expand-xl">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">Charity Information Hub</small></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span><span class="navbar-toggler-icon"></span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
           <div class="collapse navbar-collapse" id="top-menu">
-            <ul class="navbar-nav mx-auto">
-                  <li class="nav-item"><a class="nav-link" href="news.html">Các nhà hảo tâm</a></li>
-                  <li class="nav-item"><a class="nav-link" href="careers.html">Nhóm từ thiện</a></li>
-            </ul>
+            <form class="form-inline">
+              <div class="input-group">
+                <select class="custom-select">
+                  <option>Thành phố</option>
+                </select>
+                <select class="custom-select">
+                  <option>Quận						</option>
+                </select>
+                <select class="custom-select">
+                  <option>Phường</option>
+                </select>
+                <div class="input-group-append">
+                  <button class="btn btn-primary d-flex"><i class="material-icons">search</i></button>
+                </div>
+              </div>
+            </form>
             <ul class="navbar-nav ml-auto list-unstyled">
               <li class="list-inline-item"><a class="btn btn-sm btn-success" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
               <li class="list-inline-item"><a class="btn btn-sm btn-outline-secondary" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
@@ -95,7 +107,7 @@
                   </div>
                 </div>
                 <div class="col-12 mb-3">
-                  <button class="btn btn-lg btn-primary mx-auto d-block" type="submit">Đăng Nhập bằng Facebook</button>
+                  <button class="btn btn-lg btn-primary mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
                 </div>
                 <div class="col-12"><a href="user-management.html">Link dẫn vào trang quản lý sau khi đăng nhập (Dev xoá phần này)</a></div>
               </div>

@@ -14,6 +14,9 @@ form.small label {
   background-color: #00a8cc;
   border: #00a8cc; }
 
+.btn.btn-facebook {
+  background-color: #3b5998; }
+
 body {
   font-family: 'Montserrat', sans-serif; }
 
