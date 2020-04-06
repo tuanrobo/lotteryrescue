@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Homepage</title>
+    <title>Đăng ký</title>
     <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
@@ -26,37 +26,7 @@
         </div>
       </nav>
     </header>
-    <main class="jumbotron h-100 d-flex align-items-center rounded-0 mb-0">
-      <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body p-5">
-              <div class="d-flex justify-content-between mb-5">
-                <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              <form>
-                <div class="form-group">
-                  <label>Địa chỉ Email</label>
-                  <input class="form-control form-control-lg" type="email" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                  <label>Nhập mật khẩu</label>
-                  <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
-                </div>
-                <div class="form-group form-check">
-                  <input class="form-check-input" id="exampleCheck1" type="checkbox">
-                  <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah</label>
-                </div>
-                <div class="d-flex justify-content-between">
-                  <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-                  <button class="btn btn-lg btn-primary" type="submit">Đăng Ký			</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="bg-success h-100 d-flex align-items-center rounded-0 mb-0 py-3 py-md-5">
       <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -103,44 +73,26 @@
           </div>
         </div>
       </div>
-      <div class="container p-md-3 p-2">
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="row">
-                  <div class="col-12 mb-5">
-                    <h1 class="font-weight-extrabold">Chung Tay Giúp Đỡ Những Hoàn Cảnh Khó Khăn tại Việt Nam</h1>
-                  </div>
-                  <div class="col-12">
-                    <div class="row">
-                      <div class="col-md-6"><span class="h2">1000+</span>
-                        <p>Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                      </div>
-                      <div class="col-md-6"><span class="h2">1000+</span>
-                        <p>Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                      </div>
-                      <div class="col-md-6"><span class="h2">1000+</span>
-                        <p>Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                      </div>
-                      <div class="col-md-6"><span class="h2">1000+</span>
-                        <p>Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                      </div>
-                    </div>
-                  </div>
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 text-center text-white mb-2 mb-md-5">
+            <h2>Đăng ký</h2>
+          </div>
+          <div class="col-md-6 mx-auto mb-4">
+            <div class="card w-100 shadow-lg border-0 p-3 p-md-5">
+              <form>
+                <div class="form-group">
+                  <label>Vui lòng nhập mã xác thực vừa gửi cho số điện thoại 090****746</label>
+                  <input class="form-control form-control-lg" type="number">
                 </div>
-              </div>
-              <div class="offset-md-1 col-md-5 d-flex align-items-center">
-                <div class="card w-100 shadow-lg border-0 p-md-5 p-3">
-                  <h3 class="mb-3">Bạn có thể làm gì?</h3>
-                  <p class="lead mb-5">Với những món đồ dùng hoặc thức ăn thực phẩm mà bạn có thể cho đi, chúng tôi sẽ đến nhận và chia sẻ đồ của bạn cho những hoàn cảnh khó hơn, đây là điều đáng trân trọng chúng tôi rất cám ơn và hoan nghênh tấm lòng của bạn.								</p><a class="btn btn-lg btn-primary" href="sign_up.html">Tham gia cùng chúng tôi								</a>
-                </div>
-              </div>
+                <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Xác thực</button>
+                <button class="btn btn-link btn-block" type="submit" disabled>Gửi lại mã xác thực</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </section>
     <footer class="text-center pt-3 border-top">
       <div class="container">
         <ul class="list-unstyled">
