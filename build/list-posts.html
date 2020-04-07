@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Danh sách món cho</title>
+    <title>Xem tất cả</title>
     <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
@@ -31,24 +31,191 @@
               </div>
             </form>
             <ul class="navbar-nav ml-auto list-unstyled">
-              <li class="list-inline-item"><a class="btn btn-sm btn-outline-secondary" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Tuan.Nguyen</a></li>
-              <li class="list-inline-item"><a class="btn btn-sm btn-success" href="create_new_post-step_1.html" role="button" aria-pressed="true">Đăng tin</a></li>
+              <li class="list-inline-item"><a class="btn btn-md btn-success" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
+              <li class="list-inline-item"><a class="btn btn-md btn-light" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-    <main class="jumbotron h-100 d-flex align-items-center rounded-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
+    <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-5">
+            <div class="d-flex justify-content-between mb-5">
+              <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <form>
+              <div class="form-group">
+                <label>Địa chỉ Email</label>
+                <input class="form-control form-control-lg" type="email" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label>Nhập mật khẩu</label>
+                <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
+              </div>
+              <div class="form-group form-check">
+                <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah</label>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                <button class="btn btn-lg btn-primary" type="submit">Đăng Ký			</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-3 p-sm-5">
             <div class="row">
-              <div class="col-md-6"></div>
+              <div class="col-12">
+                <div class="d-flex justify-content-between mb-5">
+                  <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+              </div>
+              <div class="col-12">
+                <form>
+                  <div class="form-group">
+                    <label>Số điện thoại</label>
+                    <input class="form-control form-control-lg" type="number">
+                  </div>
+                  <div class="form-group">
+                    <label>Mật khẩu</label>
+                    <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
+                  </div>
+                  <div class="d-flex justify-content-between mb-4"><a class="btn btn-link" href="#">Quên mật khẩu?</a>
+                    <button class="btn btn-lg btn-primary" type="submit">Đăng Nhập</button>
+                  </div>
+                </form>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="row">
+                  <div class="col">
+                    <hr>
+                  </div>
+                  <div class="col d-flex align-items-center"><small class="text-muted mx-auto">Hoặc</small></div>
+                  <div class="col">
+                    <hr>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <button class="btn btn-lg btn-primary mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
+              </div>
+              <div class="col-12"><a href="user-management.html">Link dẫn vào trang quản lý sau khi đăng nhập (Dev xoá phần này)</a></div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <section class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-12">
+                <h4 class="mb-5 d-flex"><i class="material-icons mr-3 text-danger">favorite</i>Nhà giải cứu mới</h4>
+                <form class="form-inline">
+                  <div class="input-group">
+                    <select class="custom-select">
+                      <option>Thành phố</option>
+                    </select>
+                    <select class="custom-select">
+                      <option>Quận						</option>
+                    </select>
+                    <select class="custom-select">
+                      <option>Phường</option>
+                    </select>
+                    <div class="input-group-append">
+                      <button class="btn btn-primary d-flex"><i class="material-icons">search</i></button>
+                    </div>
+                  </div>
+                </form>
+                <div class="card-columns mb-3"><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Khang - 0906****834</div>ủng hộ</small>
+                          <h5 class="card-title">10kg gạo, 5 chai nước mắm, 4 bộ quần áo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">130 Khẩu trang vải Kháng khuẩn</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">56kg gạo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Chị Huyền - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">300,000 đồng</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">56kg gạo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Khang - 0906****834</div>ủng hộ</small>
+                          <h5 class="card-title">10kg gạo, 5 chai nước mắm, 4 bộ quần áo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">130 Khẩu trang vải Kháng khuẩn</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Khang - 0906****834</div>ủng hộ</small>
+                          <h5 class="card-title">10kg gạo, 5 chai nước mắm, 4 bộ quần áo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">130 Khẩu trang vải Kháng khuẩn</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">56kg gạo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">56kg gạo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Khang - 0906****834</div>ủng hộ</small>
+                          <h5 class="card-title">10kg gạo, 5 chai nước mắm, 4 bộ quần áo</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a><a class="card text-center shadow-sm text-decoration-none" href="post_details.html">
+                        <div class="card-body"><small class="text-secondary">
+                            <div class="font-weight-bold">Anh Tiến - 0902****345</div>ủng hộ</small>
+                          <h5 class="card-title">130 Khẩu trang vải Kháng khuẩn</h5>
+                          <p class="card-text"> <small class="text-muted d-flex align-items-center justify-content-center"><i class="material-icons mr-2" style="font-size:1.5em">room </i>Quận 5, HCM</small></p>
+                        </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 pl-md-4">
+            <div class="card w-100 shadow-sm p-md-4 p-3 bg-primary text-white">
+              <h3 class="mb-3">Bạn có thể làm gì?</h3>
+              <p class="mb-5">Với những món đồ dùng hoặc thức ăn thực phẩm mà bạn có thể cho đi, chúng tôi sẽ đến nhận và chia sẻ đồ của bạn cho những hoàn cảnh khó hơn, đây là điều đáng trân trọng chúng tôi rất cám ơn và hoan nghênh tấm lòng của bạn.								</p><a class="btn btn-lg btn-warning" href="sign_up.html">Tham gia cùng chúng tôi</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer class="text-center pt-3">
       <div class="container">
         <ul class="list-unstyled">
