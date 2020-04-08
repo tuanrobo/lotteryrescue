@@ -1,5 +1,6 @@
-# [Trang chủ](https://tuanrobo.github.io/lotteryrescue/build/index.html)
-Trang mặc định khi chưa đăng ký
+# Trang chủ
+1. [Khi chưa đăng ký](https://tuanrobo.github.io/lotteryrescue/build/index.html)
+2. [Đã đăng ký](https://tuanrobo.github.io/lotteryrescue/build/index-logged_in.html)
 # [Đăng ký](https://tuanrobo.github.io/lotteryrescue/build/sign_up.html)
 # [Đăng nhập](https://tuanrobo.github.io/lotteryrescue/build/sign_in.html)
 Có 2 loại đăng nhập: Popup và mở một trang mới
