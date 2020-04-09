@@ -16,18 +16,11 @@
           <div class="collapse navbar-collapse" id="top-menu">
             <form class="form-inline">
               <div class="input-group">
-                <select class="custom-select">
-                  <option>Thành phố</option>
-                </select>
-                <select class="custom-select">
-                  <option>Quận						</option>
-                </select>
-                <select class="custom-select">
-                  <option>Phường</option>
-                </select>
-                <div class="input-group-append">
-                  <button class="btn btn-primary d-flex"><i class="material-icons">search</i></button>
+                <div class="input-group-prepend">
+                  <div class="input-group-text bg-transparent border-right-0"><i class="material-icons">search</i></div>
                 </div>
+                <label class="sr-only">Tìm người nghèo</label>
+                <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
               </div>
             </form>
             <ul class="navbar-nav ml-auto list-unstyled">
@@ -100,33 +93,103 @@
                 </div>
               </div>
             </div>
+            <div class="card mb-3">
+              <div class="card-header d-flex justify-content-between align-items-center"><strong>Kho của bạn				</strong></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-light small text-muted d-none d-md-block">
+                  <div class="row">
+                    <div class="col-md-4"><span>Loại hàng</span></div>
+                    <div class="col-md-4"><span>Số lượng</span></div>
+                    <div class="col-md-2"><span>Qui đổi $</span></div>
+                    <div class="col-md-2"><span>Nhập lúc</span></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <dl class="row no-gutters mb-0">
+                    <dt class="col-5 d-block d-md-none">Loại hàng:</dt>
+                    <dd class="col-7 col-md-4 mb-md-0">Gạo									</dd>
+                    <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">10kg</dd>
+                    <dt class="col-5 d-block d-md-none">Quy đổi $:  </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">100Kđ</dd>
+                    <dt class="col-5 d-block d-md-none">Nhập lúc:</dt>
+                    <dd class="col-7 col-md-2 mb-md-0">1/4/2020</dd>
+                  </dl>
+                </li>
+                <li class="list-group-item">
+                  <dl class="row no-gutters mb-0">
+                    <dt class="col-5 d-block d-md-none">Loại hàng:</dt>
+                    <dd class="col-7 col-md-4 mb-md-0">Gạo									</dd>
+                    <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">10kg</dd>
+                    <dt class="col-5 d-block d-md-none">Quy đổi $:  </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">100Kđ</dd>
+                    <dt class="col-5 d-block d-md-none">Nhập lúc:</dt>
+                    <dd class="col-7 col-md-2 mb-md-0">1/4/2020	</dd>
+                  </dl>
+                </li>
+                <li class="list-group-item">
+                  <dl class="row no-gutters mb-0">
+                    <dt class="col-5 d-block d-md-none">Loại hàng:</dt>
+                    <dd class="col-7 col-md-4 mb-md-0">Gạo									</dd>
+                    <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">10kg</dd>
+                    <dt class="col-5 d-block d-md-none">Quy đổi $:  </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">100Kđ</dd>
+                    <dt class="col-5 d-block d-md-none">Nhập lúc:</dt>
+                    <dd class="col-7 col-md-2 mb-md-0">1/4/2020	</dd>
+                  </dl>
+                </li>
+                <li class="list-group-item">
+                  <dl class="row no-gutters mb-0">
+                    <dt class="col-5 d-block d-md-none">Loại hàng:</dt>
+                    <dd class="col-7 col-md-4 mb-md-0">Gạo									</dd>
+                    <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">10kg</dd>
+                    <dt class="col-5 d-block d-md-none">Quy đổi $:  </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">100Kđ</dd>
+                    <dt class="col-5 d-block d-md-none">Nhập lúc:</dt>
+                    <dd class="col-7 col-md-2 mb-md-0">1/4/2020	</dd>
+                  </dl>
+                </li>
+              </ul>
+            </div>
             <div class="card">
-              <div class="card-header d-flex justify-content-between align-items-center"><span>Kho của bạn</span><a class="btn btn-light btn-sm d-flex" href="#"><i class="material-icons mr-2">history</i>Lịch sử xuất nhập</a></div>
-              <div class="card-body p-0">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-md-4"><a href="#">Gạo</a></div>
-                      <div class="col-md-4"><span>10kg</span></div>
-                      <div class="col-md-4"><span>500đ</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-md-4"><a href="#">Quần áo</a></div>
-                      <div class="col-md-4"><span>10 bộ</span></div>
-                      <div class="col-md-4"><span>500đ</span></div>
-                    </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="row">
-                      <div class="col-md-4"><a href="#">Nước mắm</a></div>
-                      <div class="col-md-4"><span>10 lít</span></div>
-                      <div class="col-md-4"><span>500đ</span></div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <div class="card-header d-flex justify-content-between align-items-center"><strong>Đã cho						</strong></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-light small text-muted d-none d-md-block">
+                  <div class="row">
+                    <div class="col-md-4"><span>Người nhận</span></div>
+                    <div class="col-md-4"><span>Đã nhận</span></div>
+                    <div class="col-md-2"><span>Số lượng</span></div>
+                    <div class="col-md-2"><span>Thời gian</span></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <dl class="row no-gutters mb-0">
+                    <dt class="col-5 d-block d-md-none">Người nhận:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">0907 319 164									</dd>
+                    <dt class="col-5 d-block d-md-none">Đã nhận:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">Gạo</dd>
+                    <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">10kg</dd>
+                    <dt class="col-5 d-block d-md-none">Ngày nhận: </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">30/4/2020</dd>
+                  </dl>
+                </li>
+                <li class="list-group-item">
+                  <dl class="row no-gutters mb-0">
+                    <dt class="col-5 d-block d-md-none">Người nhận:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">0907 319 164									</dd>
+                    <dt class="col-5 d-block d-md-none">Đã nhận:  </dt>
+                    <dd class="col-7 col-md-4 mb-md-0">Gạo</dd>
+                    <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">10kg</dd>
+                    <dt class="col-5 d-block d-md-none">Ngày nhận: </dt>
+                    <dd class="col-7 col-md-2 mb-md-0">30/4/2020</dd>
+                  </dl>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
