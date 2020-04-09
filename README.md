@@ -9,5 +9,5 @@ Sau khi đăng ký -> [Trang dẫn](https://tuanrobo.github.io/lotteryrescue/bui
 # Nhập kho
 Có 3 bước
 1. [Chọn loại](https://tuanrobo.github.io/lotteryrescue/build/create_new_post-step_1.html)
-2. [Nhập địa chỉ](https://tuanrobo.github.io/lotteryrescue/build/create_new_post-step_2.html)
+2. [Nhập địa chỉ](https://tuanrobo.github.io/lotteryrescue/build/create_new_post-step_2.html) (Cân nhắc thay đổi phần này, chỉ cần một địa chỉ duy nhất của User)
 3. [Xem lại](https://tuanrobo.github.io/lotteryrescue/build/create_new_post-step_3.html)

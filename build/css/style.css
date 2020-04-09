@@ -10,12 +10,10 @@ form.small label {
     font-size: small;
     font-weight: normal; }
 
-.btn-primary {
-  background-color: #00a8cc;
-  border: #00a8cc; }
-
-.btn.btn-facebook {
-  background-color: #3b5998; }
+.btn-facebook {
+  background-color: #3b5998;
+  border-color: #3b5998;
+  color: #fff; }
 
 body {
   font-family: 'Montserrat', sans-serif; }
@@ -26,12 +24,24 @@ a {
 .jumbotron {
   background-color: #00a8cc; }
 
-.form-control, .custom-select {
+.form-group label {
+  font-weight: 600; }
+
+.form-group .form-control, .form-group .custom-select {
   background-color: #f3f3f4;
   border: none; }
 
+.form-group.form-check label {
+  font-weight: 400 !important; }
+
 .btn {
   font-weight: 600; }
+  .btn-primary {
+    background-color: #00a8cc;
+    border: #00a8cc; }
+
+.bg-primary {
+  background-color: #00a8cc !important; }
 
 .progressbar {
   counter-reset: step; }

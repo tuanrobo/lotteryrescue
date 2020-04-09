@@ -60,6 +60,10 @@
                       <label>Mật khẩu</label>
                       <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
                     </div>
+                    <div class="form-group form-check">
+                      <input class="form-check-input" id="loginAuto" type="checkbox">
+                      <label class="form-check-label" for="loginAuto">Lưu tài khoản</label>
+                    </div>
                     <div class="d-flex justify-content-between mb-4"><a class="btn btn-link" href="#">Quên mật khẩu?</a>
                       <button class="btn btn-lg btn-primary" type="submit">Đăng Nhập</button>
                     </div>
@@ -77,8 +81,8 @@
                   </div>
                 </div>
                 <div class="col-12 mb-3">
-                  <button class="btn btn-lg btn-primary mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
-                </div><a class="d-flex text-center text-danger" href="user-management-init.html"><i class="material-icons mr-3">link</i><small>Xong bước xác thực sẽ sang trang cá nhân{Dev xoá cái này}</small></a>
+                  <button class="btn btn-lg mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
+                </div><a class="d-flex text-center text-danger" href="user-management.html"><i class="material-icons mr-3">link</i><small>Xong bước xác thực sẽ sang trang cá nhân{Dev xoá cái này}</small></a>
               </div>
             </div>
           </div>
@@ -86,27 +90,25 @@
       </div>
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-12 text-center text-white mb-2 mb-md-5">
-            <h2>Đăng ký</h2>
+          <div class="col-12">
+            <h2 class="text-center text-white mb-2 mb-md-5">Đăng ký</h2>
           </div>
-          <div class="col-md-6 mx-auto mb-4">
-            <div class="card w-100 shadow-lg border-0 p-3 p-md-5">
-              <form>
-                <div class="form-group">
-                  <label>Nhập số điện thoại</label>
-                  <input class="form-control form-control-lg" type="email" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                  <label>Chọn mật khẩu</label>
-                  <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
-                </div>
-                <div class="form-group form-check">
-                  <input class="form-check-input" id="exampleCheck1" type="checkbox">
-                  <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah							</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Đăng Ký</button><small class="form-text text-muted">Ở bước tiếp theo bạn sẽ nhận được mã xác nhận số điện thoại gửi qua SMS</small><a class="d-flex text-center text-danger" href="sign_up-confirmation.html"><i class="material-icons mr-3">link</i><small>Bước xác thực{Dev xoá cái này}</small></a>
-              </form>
-            </div>
+          <div class="col-md-6 mx-auto mb-4 card w-100 shadow-lg border-0 p-3 p-md-5">
+            <form>
+              <div class="form-group">
+                <label>Nhập số điện thoại</label>
+                <input class="form-control form-control-lg" type="number">
+              </div>
+              <div class="form-group">
+                <label>Chọn mật khẩu</label>
+                <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
+              </div>
+              <div class="form-group form-check">
+                <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah							</label>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Đăng Ký</button><small class="form-text text-muted">Ở bước tiếp theo bạn sẽ nhận được mã xác nhận số điện thoại gửi qua SMS</small><a class="d-flex text-center text-danger" href="sign_up-confirmation.html"><i class="material-icons mr-3">link</i><small>Bước xác thực{Dev xoá cái này}</small></a>
+            </form>
           </div>
           <div class="col-12 text-center text-white-50">
             <p>Bạn đã có tài khoản?<a class="btn btn-link" href="sign_in.html">Đăng nhập</a></p>
@@ -121,11 +123,12 @@
           <li class="list-inline-item"><a href="#">Liên Hệ</a></li>
         </ul>
         <p class="text-muted">"Mỗi đóng góp của bạn là một giọt nước giúp đất cằn nở hoa!</p>
-        <p><small class="text-black-50">Giải Cứu Vé Số © 2020			</small></p>
+        <p><small class="text-black-50">Giải Cứu Vé Số © 2020</small></p>
       </div>
     </footer>
         <script src="js/jquery.slim.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/scripts.js"></script>
   </body>
 </html>
