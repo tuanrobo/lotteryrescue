@@ -9,29 +9,29 @@
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
   </head>
   <body class="bg-light">
-    <header class="shadow-sm border-bottom bg-white">
-      <nav class="navbar navbar-expand-xl">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
-          <div class="collapse navbar-collapse" id="top-menu">
-            <form class="form-inline">
-              <div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text bg-transparent border-right-0"><i class="material-icons">search</i></div>
-                </div>
-                <label class="sr-only">Tìm người nghèo</label>
-                <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
+        <header class="shadow-sm border-bottom bg-white">
+          <nav class="navbar navbar-expand-xl">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
+              <div class="collapse navbar-collapse" id="top-menu">
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text bg-transparent border-right-0"><i class="material-icons">search</i></div>
+                    </div>
+                    <label class="sr-only">Tìm người nghèo</label>
+                    <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
+                  </div>
+                </form>
+                <ul class="navbar-nav ml-auto list-unstyled">
+                  <li class="list-inline-item"><a class="btn btn-md btn-success" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
+                  <li class="list-inline-item"><a class="btn btn-md btn-light" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
+                </ul>
               </div>
-            </form>
-            <ul class="navbar-nav ml-auto list-unstyled">
-              <li class="list-inline-item"><a class="btn btn-md btn-success" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
-              <li class="list-inline-item"><a class="btn btn-md btn-light" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <section class="bg-success h-100 d-flex align-items-center rounded-0 mb-0 py-3 py-md-5">
+            </div>
+          </nav>
+        </header>
+    <section class="bg-primary h-100 d-flex align-items-center rounded-0 mb-0 py-3 py-md-5">
       <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -75,7 +75,7 @@
                 </div>
                 <div class="col-12 mb-3">
                   <button class="btn btn-lg mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
-                </div><a class="d-flex text-center text-danger" href="user-management.html"><i class="material-icons mr-3">link</i><small>Xong bước xác thực sẽ sang trang cá nhân{Dev xoá cái này}</small></a>
+                </div><a class="d-flex text-center text-danger" href="index-logged_in.html"><i class="material-icons mr-3">link</i><small>Xong bước này thì sang trang cá nhân hoặc trang chủ{Dev xoá cái này}</small></a>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@
         <p><small class="text-black-50">Giải Cứu Vé Số © 2020</small></p>
       </div>
     </footer>
-        <script src="js/jquery.slim.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.js"></script>
         <script src="js/scripts.js"></script>
