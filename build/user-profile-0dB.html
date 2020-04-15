@@ -92,19 +92,19 @@
           <nav class="navbar navbar-expand-xl">
             <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
-              <div class="collapse navbar-collapse" id="top-menu">
-                <form class="form-inline">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <div class="input-group-text bg-transparent border-right-0"><i class="material-icons">search</i></div>
-                    </div>
-                    <label class="sr-only">Tìm người nghèo</label>
-                    <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
+              <form class="form-inline">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text border-0"><i class="material-icons">search</i></div>
                   </div>
-                </form>
+                  <label class="sr-only">Tìm người nghèo</label>
+                  <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
+                </div>
+              </form>
+              <div class="collapse navbar-collapse" id="top-menu">
                 <ul class="navbar-nav ml-auto list-unstyled">
-                  <li class="list-inline-item"><a class="btn btn-md btn-success" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
-                  <li class="list-inline-item"><a class="btn btn-md btn-light" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
+                  <li class="list-inline-item"><a class="btn btn-md btn-success btn-block" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
+                  <li class="list-inline-item"><a class="btn btn-md btn-light btn-block" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
                 </ul>
               </div>
             </div>
@@ -118,21 +118,22 @@
               <div class="mb-3 text-center">
                 <div class="w-50 mx-auto mb-3"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/300undefined">
                 </div>
-                <p class="mb-1">Anh Khang</p><small>Thành viên tích cực</small>
+                <p class="mb-1">Anh Khang</p>
+                <p class="d-flex align-items center justify-content-center text-muted"> <i class="material-icons mr-2">monetization_on</i><span>0 đồng		</span></p>
               </div>
               <ul class="list-group list-group-flush mb-5">
                 <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Tài sản trong kho<span class="badge badge-primary badge-pill">0</span></a></li>
                 <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Đã cho<span class="badge badge-primary badge-pill">0</span></a></li>
                 <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Đã Nhận<span class="badge badge-primary badge-pill">1</span></a></li>
-              </ul><a class="btn btn-lg btn-primary" href="sign_up.html">Liên hệ với anh Khang</a>
+              </ul><a class="btn btn-md btn-secondary btn-block d-flex align-items-center justify-content-center" href="sign_up.html"><i class="material-icons mr-2">add</i>Theo dõi</a><a class="btn btn-lg btn-primary btn-block" href="sign_up.html">Liên hệ</a>
             </div>
           </div>
           <div class="col-md-8">
             <div class="row">
               <div class="col-12">
                 <div class="card bg-light border-0 mb-3">
-                  <div class="card-body my-3 text-center">
-                    <h5 class="text-muted mb-0">Kho của người này hiện đang trống</h5>
+                  <div class="card-body my-3 text-center"><i class="material-icons text-muted mb-3" style="font-size:80px">storefront</i>
+                    <h5 class="text-muted mb-0">Kho của thành viên này hiện đang trống</h5>
                   </div>
                 </div>
                 <div class="card">
@@ -143,7 +144,7 @@
                         <div class="col-md-4"><span>Đã nhận</span></div>
                         <div class="col-md-4"><span>Số lượng</span></div>
                         <div class="col-md-2"><span>Người cho</span></div>
-                        <div class="col-md-2"><span>Thời gian</span></div>
+                        <div class="col-md-2"></div>
                       </div>
                     </li>
                     <li class="list-group-item">
@@ -155,7 +156,7 @@
                         <dt class="col-5 d-block d-md-none">Người cho:</dt>
                         <dd class="col-7 col-md-2 mb-md-0"><a href="user-profile-0dA.html">anh Khang</a></dd>
                         <dt class="col-5 d-block d-md-none">Ngày nhận: </dt>
-                        <dd class="col-7 col-md-2 mb-md-0">30/4/2020</dd>
+                        <dd class="col-7 col-md-2 mb-md-0 text-right small text-muted">30/4/2020</dd>
                       </dl>
                     </li>
                   </ul>
