@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Create New Post</title>
-    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="bg-light">
         <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="notifications-mobile">
@@ -82,7 +82,7 @@
           <div class="container">
             <div class="row pt-3 pt-lg-5">
               <div class="col-12 text-center mb-3">
-                <h3>Chọn loại hàng nhập kho</h3>
+                <h3>Chọn hàng nhập</h3>
               </div>
               <div class="col-12 col-md-8 mx-auto mb-5 d-none d-lg-block">
                 <ul class="progressbar list-unstyled">
@@ -95,71 +95,8 @@
                 <form>
                   <div class="row">
                     <div class="col-12 mb-5">
-                      <div class="accordion" id="goodsTypes">
-                        <div class="card">
-                          <div class="card-header" id="headingOne">
-                            <div class="form-group form-check mb-0">
-                              <input class="form-check-input" id="type1" type="checkbox" checked>
-                              <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Thực phẩm</label>
-                            </div>
-                          </div>
-                          <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#goodsTypes">
-                            <div class="card-body">
-                              <div class="row">
-                                <div class="col-md-6">
-                                  <div class="form-group">
-                                    <label>Loại thực phẩm</label>
-                                    <input class="form-control" type="text" placeholder="vd: Gạo" value="gạo">
-                                  </div>
-                                </div>
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <label>Số lượng</label>
-                                    <input class="form-control" type="number" placeholder="0" value="10">
-                                  </div>
-                                </div>
-                                <div class="col-md-3">
-                                  <div class="form-group">
-                                    <label>Đơn vị</label>
-                                    <select class="form-control">
-                                      <option>Kg</option>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <button class="btn btn-link">Thêm loại thực phẩm</button>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingTwo">
-                            <div class="form-group form-check mb-0">
-                              <input class="form-check-input" id="type2" type="checkbox">
-                              <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quần áo</label>
-                            </div>
-                          </div>
-                          <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#goodsTypes">
-                            <div class="card-body">Quần áo												</div>
-                          </div>
-                        </div>
-                        <div class="card">
-                          <div class="card-header" id="headingThree">
-                            <div class="form-group form-check mb-0">
-                              <input class="form-check-input" id="type3" type="checkbox">
-                              <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Đồ dùng sinh hoạt</label>
-                            </div>
-                          </div>
-                          <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#goodsTypes">
-                            <div class="card-body">Content 3																							</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="d-flex justify-content-between"><a class="btn btn-link" href="#">Thoát</a><a class="btn btn-lg btn-primary" href="create_new_post-step_2.html">Tiếp tục</a></div>
-                    </div>
+                      <div class="list-group"><a class="list-group-item list-group-item-actiond-flex d-flex justify-content-between align-items-center" href="create_new_post-step_2.html"> <span>Thực phẩm</span><i class="material-icons">chevron_right</i></a><a class="list-group-item list-group-item-actiond-flex d-flex justify-content-between align-items-center" href="create_new_post-step_2.html"><span>Quần áo</span><i class="material-icons">chevron_right</i></a><a class="list-group-item list-group-item-actiond-flex d-flex justify-content-between align-items-center" href="create_new_post-step_2.html"><span>Khác...</span><i class="material-icons">chevron_right</i></a></div>
+                    </div><a class="btn btn-lg btn-link btn-block" href="user-management.html">Thoát</a>
                   </div>
                 </form>
               </div>
