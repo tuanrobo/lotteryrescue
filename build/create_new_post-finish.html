@@ -9,6 +9,41 @@
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
   </head>
   <body class="bg-light">
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="notifications-mobile">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content rounded-0 border-0">
+              <div class="modal-header">
+                <h5 class="modal-title">Thông báo</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times; </span></button>
+              </div>
+              <div class="modal-body">
+                <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a></div>
+              </div><span class="modal-footer">
+                <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="action-mobile">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content rounded-0 border-0">
+              <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="create_new_post-step_1.html">Tôi muốn nhập qùa vào kho</a><a class="btn btn-lg btn-primary btn-block" href="export-step_1.html">Tôi muốn cho quà</a>
+              </div><span class="modal-footer">
+                <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
+            </div>
+          </div>
+        </div>
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl">
             <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index-logged_in.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a>
@@ -46,7 +81,7 @@
     <section class="bg-primary">
       <div class="container">
         <div class="row pt-5">
-          <div class="col-12 text-center mb-3">
+          <div class="col-12 col-md-8 mx-auto mb-5 d-none d-lg-block">
             <h3 class="text-white">🤟 <br>Hoàn thành</h3>
           </div>
           <div class="col-12 col-md-8 mx-auto card p-5 shadow border-0 mb-5 text-center">
@@ -55,7 +90,7 @@
                 <h4 class="mb-5">Xin cám ơn sự đóng góp của bạn</h4>
                 <p class="lead">Bạn vui lòng chờ đợi trong lúc đội ngũ chúng tôi xác minh lại thông tin của bạn!								</p>
               </div>
-              <div class="col-12"><a class="btn btn-lg btn-primary" href="index-logged_in.html">Về trang chủ</a></div>
+              <div class="col-12"><a class="btn btn-lg btn-primary" href="user-management.html">Về trang chủ</a></div>
             </div>
           </div>
         </div>

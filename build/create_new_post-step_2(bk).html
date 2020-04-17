@@ -82,44 +82,60 @@
           <div class="container">
             <div class="row pt-3 pt-lg-5">
               <div class="col-12 text-center mb-3">
-                <h3>Xem lại thông tin</h3>
+                <h3>Thông tin người nhận</h3>
               </div>
               <div class="col-12 col-md-8 mx-auto mb-5 d-none d-lg-block">
                 <ul class="progressbar list-unstyled">
                       <li class="finished"><small>Món cho</small></li>
-                      <li class="finished"><small>Địa chỉ</small></li>
-                      <li class="active"><small>Hoàn thành</small></li>
+                      <li class="active"><small>Địa chỉ</small></li>
+                      <li><small>Hoàn thành</small></li>
                 </ul>
               </div>
-              <div class="col-12 col-md-8 mx-auto card p-5 shadow border-0 mb-5">
+              <div class="col-12 col-md-8 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-5">
                 <form>
                   <div class="row">
                     <div class="col-12 mb-5">
-                      <dl class="row">
-                        <dt class="col-md-4">Thông tin: </dt>
-                        <dd class="col-md-8">Mình hiện đang có 10kg gạo dẻo, nhóm từ thiện nào cần thì liên hệ mình.									</dd>
-                        <dt class="col-md-4">Loại quà:</dt>
-                        <dd class="col-md-8">Gạo / 10kg</dd>
-                        <dt class="col-md-4">Thông tin liên hệ:</dt>
-                        <dd class="col-md-8">anh Khang</dd>
-                        <dt class="col-md-4">Số điện thoại:</dt>
-                        <dd class="col-md-8">090 837 242</dd>
-                        <dt class="col-md-4">Địa chỉ nhận:</dt>
-                        <dd class="col-md-8">Phường 10, Quận 8, Hồ Chí Minh</dd>
-                      </dl>
-                    </div>
-                    <div class="col-12 text-center mb-5 bg-light p-3 rounded">
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" id="public" type="radio" value="option1" name="permision" checked>
-                        <label class="form-check-label" for="public">Công khai</label>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Họ tên người cho</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="Bill Gates" value="">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label>Số điện thoại liên hệ</label>
+                                <input class="form-control form-control-lg" type="number" placeholder="0907319169" value="">
+                          </div>
+                        </div>
                       </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" id="private" type="radio" value="option2" name="permision">
-                        <label class="form-check-label" for="private">Không công khai</label>
-                      </div><small class="form-text text-muted">Bạn có thể thay đổi trạng thái này trong trang quản lý</small>
+                      <div class="row">
+                        <div class="col-md-4 form-group">
+                          <label>Thành Phố</label>
+                          <select class="form-control form-control-lg">
+                            <option>Hồ Chí Minh										</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label>Quận/Huyện</label>
+                          <select class="form-control form-control-lg">
+                            <option>Quận 5</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4 form-group">
+                          <label>Phường/Xã</label>
+                          <select class="form-control form-control-lg">
+                            <option>Phường 10</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label>Thông tin thêm</label>
+                        <textarea class="form-control form-control-lg"></textarea>
+                      </div>
                     </div>
                     <div class="col-12">
-                      <div class="d-flex justify-content-between"><a class="btn btn-link" href="create_new_post-step_2.html">Quay lại </a><a class="btn btn-lg btn-primary" href="create_new_post-finish.html">Hoàn thành</a></div>
+                      <div class="d-flex justify-content-between"><a class="btn btn-link" href="create_new_post-step_1.html">Quay lại </a><a class="btn btn-lg btn-primary" href="create_new_post-step_3.html">Tiếp tục</a></div>
                     </div>
                   </div>
                 </form>
