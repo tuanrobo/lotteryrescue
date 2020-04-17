@@ -93,3 +93,9 @@ a {
       content: "✓"; }
     .progressbar li.finished + li:after {
       background: #00e676; }
+
+.modal-bottom .modal-dialog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }

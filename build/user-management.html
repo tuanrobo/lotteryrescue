@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="action-mobile">
+        <div class="modal fade modal-bottom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="action-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="create_new_post-step_1.html">Tôi muốn nhập qùa vào kho</a><a class="btn btn-lg btn-primary btn-block" href="export-step_1.html">Tôi muốn cho quà</a>
@@ -44,18 +44,44 @@
             </div>
           </div>
         </div>
+        <div class="modal fade modal-bottom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="more-mobile">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content rounded-0 border-0">
+              <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="index.html">Thoát tài khoản</a>
+              </div><span class="modal-footer">
+                <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="search-mobile">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content rounded-0 border-0">
+              <div class="modal-header">
+                <h5 class="modal-title">Tìm người nghèo</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times; </span></button>
+              </div>
+              <div class="modal-body">
+                <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
+                    </div>
+                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a></div>
+              </div><span class="modal-footer">
+                <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
+            </div>
+          </div>
+        </div>
             <header class="bg-white fixed-top">
               <nav class="navbar navbar-expand-xl">
-                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index-logged_in.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a>
-                  <form class="form-inline">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <div class="input-group-text border-0"><i class="material-icons">search</i></div>
-                      </div>
-                      <label class="sr-only">Tìm người nghèo</label>
-                      <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
-                    </div>
-                  </form>
+                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index-logged_in.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a><a class="btn btn-light d-flex" href="#" data-target="#search-mobile" data-toggle="modal"><i class="material-icons mr-2">search</i><span class="text-muted font-weight-normal">Tìm người nghèo</span></a>
                   <ul class="navbar-nav ml-auto d-none d-lg-block">
                     <li class="list-inline-item">
                           <div class="btn-group"><a class="btn btn-md btn-link text-muted" id="notification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons">notifications</i></a>
@@ -230,7 +256,7 @@
           </div>
         </main>
             <nav class="navbar fixed-bottom navbar-light bg-white d-block d-lg-none p-0 border-top">
-              <div class="list-group list-group-horizontal"><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">home</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-target="#notifications-mobile" data-toggle="modal"><i class="material-icons">notifications</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-target="#action-mobile" data-toggle="modal"><i class="material-icons text-danger">favorite</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">person</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#"><i class="material-icons">more_vert</i></a>
+              <div class="list-group list-group-horizontal"><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">home</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-target="#notifications-mobile" data-toggle="modal"><i class="material-icons">notifications</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-target="#action-mobile" data-toggle="modal"><i class="material-icons text-danger">favorite</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">person</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-target="#more-mobile" data-toggle="modal"><i class="material-icons">more_vert</i></a>
               </div>
             </nav>
     <footer class="text-center pt-3 d-none d-sm-block">

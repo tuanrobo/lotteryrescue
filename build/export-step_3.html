@@ -108,40 +108,26 @@
           <div class="container">
             <div class="row pt-3 pt-lg-5">
               <div class="col-12 text-center mb-3">
-                <h3>Chọn hàng nhập</h3>
+                <h3>Thông tin cần cho</h3>
               </div>
               <div class="col-12 col-md-8 mx-auto mb-5 d-none d-lg-block">
                 <ul class="progressbar list-unstyled">
-                      <li class="finished"><small>số ĐT</small></li>
-                      <li class="active"><small>Món cho</small></li>
+                      <li class="active"><small>số ĐT</small></li>
+                      <li><small>Món cho</small></li>
                       <li><small>SMS code</small></li>
                 </ul>
               </div>
-              <div class="col-12 col-md-6 mx-auto card py-4 p-md-5 shadow border-0 mb-5">
+              <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-5">
+                <p class="text-muted">Bạn sẽ nhận được SMS code từ người nhận, vui lòng nhập vào để hoàn tất quá trình cho</p>
                 <form>
                   <div class="row">
-                    <div class="col-md-6 col-lg-12">
+                    <div class="col-12">
                       <div class="form-group">
-                        <label>Loại thực phẩm</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="vd: Gạo" value="">
+                        <label class="sr-only">Nhập SMS code</label>
+                            <input class="form-control form-control-lg" type="number" placeholder="Nhập mã SMS" value="">
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Số lượng</label>
-                            <input class="form-control form-control-lg" type="number" placeholder="" value="">
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label>Đơn vị</label>
-                        <select class="form-control form-control-lg">
-                          <option>Kg</option>
-                          <option>tấn</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-12"><a class="btn btn-lg btn-link btn-block" href="user-management.html">Huỷ</a><a class="btn btn-lg btn-primary btn-block" href="export-step_3.html">Chuyển</a></div>
+                    <div class="col-12"><a class="btn btn-lg btn-primary btn-block" href="export-step_2.html">Hoàn tất</a><a class="btn btn-lg btn-link btn-block" href="#">Thoát</a></div>
                   </div>
                 </form>
               </div>
