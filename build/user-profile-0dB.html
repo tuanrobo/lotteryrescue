@@ -4,170 +4,94 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Chi tiết</title>
-    <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
   </head>
   <body class="bg-light">
-    <div class="modal fade" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body p-5">
-            <div class="d-flex justify-content-between mb-5">
-              <h5 class="modal-title" id="exampleModalLabel">Đăng Ký</h5>
-              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <form>
-              <div class="form-group">
-                <label>Địa chỉ Email</label>
-                <input class="form-control form-control-lg" type="email" aria-describedby="emailHelp">
-              </div>
-              <div class="form-group">
-                <label>Nhập mật khẩu</label>
-                <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
-              </div>
-              <div class="form-group form-check">
-                <input class="form-check-input" id="exampleCheck1" type="checkbox">
-                <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah</label>
-              </div>
-              <div class="d-flex justify-content-between">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
-                <button class="btn btn-lg btn-primary" type="submit">Đăng Ký			</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body p-3 p-sm-5">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex justify-content-between mb-5">
-                  <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
-                  <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                </div>
-              </div>
-              <div class="col-12">
-                <form>
-                  <div class="form-group">
-                    <label>Số điện thoại</label>
-                    <input class="form-control form-control-lg" type="number">
-                  </div>
-                  <div class="form-group">
-                    <label>Mật khẩu</label>
-                    <input class="form-control form-control-lg" type="password" placeholder="Tối thiểu 8 ký tự">
-                  </div>
-                  <div class="form-group form-check">
-                    <input class="form-check-input" id="loginAuto" type="checkbox">
-                    <label class="form-check-label" for="loginAuto">Lưu tài khoản</label>
-                  </div>
-                  <div class="d-flex justify-content-between mb-4"><a class="btn btn-link" href="#">Quên mật khẩu?</a>
-                    <button class="btn btn-lg btn-primary" type="submit">Đăng Nhập</button>
-                  </div>
-                </form>
-              </div>
-              <div class="col-12 mb-3">
-                <div class="row">
-                  <div class="col">
-                    <hr>
-                  </div>
-                  <div class="col d-flex align-items-center"><small class="text-muted mx-auto">Hoặc</small></div>
-                  <div class="col">
-                    <hr>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 mb-3">
-                <button class="btn btn-lg mx-auto d-block btn-facebook" type="submit">Đăng Nhập bằng Facebook</button>
-              </div><a class="d-flex text-center text-danger" href="index-logged_in.html"><i class="material-icons mr-3">link</i><small>Xong bước này thì sang trang cá nhân hoặc trang chủ{Dev xoá cái này}</small></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        <header class="shadow-sm border-bottom bg-white">
-          <nav class="navbar navbar-expand-xl">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
-              <form class="form-inline">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text border-0"><i class="material-icons">search</i></div>
-                  </div>
-                  <label class="sr-only">Tìm người nghèo</label>
-                  <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
-                </div>
-              </form>
-              <div class="collapse navbar-collapse" id="top-menu">
-                <ul class="navbar-nav ml-auto">
-                  <li class="list-inline-item"><a class="btn btn-md btn-success btn-block" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
-                  <li class="list-inline-item"><a class="btn btn-md btn-light btn-block" href="#" role="button" aria-pressed="true" data-toggle="modal" data-target="#signIn">Đăng nhập</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-    <section class="bg-white py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 pl-md-4">
-            <div class="card w-100 shadow-sm p-md-4 p-3 mb-3">
-              <div class="mb-3 text-center">
-                <div class="w-50 mx-auto mb-3"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/300undefined">
-                </div>
-                <p class="mb-1">Anh Khang</p>
-                <p class="d-flex align-items center justify-content-center text-muted"> <i class="material-icons mr-2">monetization_on</i><span>0 đồng		</span></p>
-              </div>
-              <ul class="list-group list-group-flush mb-5">
-                <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Tài sản trong kho<span class="badge badge-primary badge-pill">0</span></a></li>
-                <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Đã cho<span class="badge badge-primary badge-pill">0</span></a></li>
-                <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Đã Nhận<span class="badge badge-primary badge-pill">1</span></a></li>
-              </ul><a class="btn btn-md btn-secondary btn-block d-flex align-items-center justify-content-center" href="sign_up.html"><i class="material-icons mr-2">add</i>Theo dõi</a><a class="btn btn-lg btn-primary btn-block" href="sign_up.html">Liên hệ</a>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-12">
-                <div class="card bg-light border-0 mb-3">
-                  <div class="card-body my-3 text-center"><i class="material-icons text-muted mb-3" style="font-size:80px">storefront</i>
-                    <h5 class="text-muted mb-0">Kho của thành viên này hiện đang trống</h5>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header d-flex justify-content-between align-items-center"><strong>Đã nhận</strong></div>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item bg-light small text-muted d-none d-md-block">
-                      <div class="row">
-                        <div class="col-md-4"><span>Đã nhận</span></div>
-                        <div class="col-md-4"><span>Số lượng</span></div>
-                        <div class="col-md-2"><span>Người cho</span></div>
-                        <div class="col-md-2"></div>
+            <header class="bg-white fixed-top">
+              <nav class="navbar navbar-expand-xl">
+                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a>
+                  <form class="form-inline">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text border-0"><i class="material-icons">search</i></div>
                       </div>
-                    </li>
-                    <li class="list-group-item">
-                      <dl class="row no-gutters mb-0">
-                        <dt class="col-5 d-block d-md-none">Đã nhận:  </dt>
-                        <dd class="col-7 col-md-4 mb-md-0">Gạo</dd>
-                        <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
-                        <dd class="col-7 col-md-4 mb-md-0">10kg</dd>
-                        <dt class="col-5 d-block d-md-none">Người cho:</dt>
-                        <dd class="col-7 col-md-2 mb-md-0"><a href="user-profile-0dA.html">anh Khang</a></dd>
-                        <dt class="col-5 d-block d-md-none">Ngày nhận: </dt>
-                        <dd class="col-7 col-md-2 mb-md-0 text-right small text-muted">30/4/2020</dd>
-                      </dl>
-                    </li>
+                      <label class="sr-only">Tìm người nghèo</label>
+                      <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
+                    </div>
+                  </form>
+                  <ul class="navbar-nav ml-auto d-none d-lg-block">
+                    <li class="list-inline-item"><a class="btn btn-md btn-success btn-block" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
+                    <li class="list-inline-item"><a class="btn btn-md btn-light btn-block" href="sign_in.html" role="button" aria-pressed="true">Đăng nhập</a></li>
                   </ul>
                 </div>
+              </nav>
+            </header>
+        <main>
+          <div class="container">
+            <div class="row pt-3 pt-lg-5">
+              <div class="col-lg-4 pl-md-4">
+                <div class="card w-100 shadow-sm p-md-4 p-3 mb-3">
+                  <div class="mb-3 text-center">
+                    <div class="w-50 mx-auto mb-3"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/300undefined">
+                    </div>
+                    <p class="d-flex align-items-enter justify-content-center mb-3">Anh Khang<i class="material-icons ml-2 text-primary" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="left" title="Đã xác thực">check_circle</i></p>
+                    <p class="d-flex align-items center justify-content-center text-muted"> <i class="material-icons mr-2">monetization_on</i><span>0 đồng		</span></p>
+                  </div>
+                  <ul class="list-group list-group-flush mb-5">
+                    <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Tài sản trong kho<span class="badge badge-primary badge-pill">0</span></a></li>
+                    <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Đã cho<span class="badge badge-primary badge-pill">0</span></a></li>
+                    <li class="list-group-item list-group-item-action"><a class="d-flex justify-content-between align-items-center" href="#">Đã Nhận<span class="badge badge-primary badge-pill">1</span></a></li>
+                  </ul><a class="btn btn-md btn-secondary btn-block d-flex align-items-center justify-content-center" href="sign_up.html"><i class="material-icons mr-2">add</i>Theo dõi</a><a class="btn btn-lg btn-primary btn-block" href="sign_up.html">Liên hệ</a><a class="btn btn-sm btn-link btn-block" href="sign_up.html">Báo cáo</a>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card bg-light border-0 mb-3">
+                      <div class="card-body my-3 text-center"><i class="material-icons text-muted mb-3" style="font-size:80px">storefront</i>
+                        <h5 class="text-muted mb-0">Kho của thành viên này hiện đang trống</h5>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header d-flex justify-content-between align-items-center"><strong>Đã nhận</strong></div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item bg-light small text-muted d-none d-md-block">
+                          <div class="row">
+                            <div class="col-md-4"><span>Đã nhận</span></div>
+                            <div class="col-md-4"><span>Số lượng</span></div>
+                            <div class="col-md-2"><span>Người cho</span></div>
+                            <div class="col-md-2"></div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <dl class="row no-gutters mb-0">
+                            <dt class="col-5 d-block d-md-none">Đã nhận:  </dt>
+                            <dd class="col-7 col-md-4 mb-md-0">Gạo</dd>
+                            <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                            <dd class="col-7 col-md-4 mb-md-0">10kg</dd>
+                            <dt class="col-5 d-block d-md-none">Người cho:</dt>
+                            <dd class="col-7 col-md-2 mb-md-0"><a href="user-profile-0dA.html">anh Khang</a></dd>
+                            <dt class="col-5 d-block d-md-none">Ngày nhận: </dt>
+                            <dd class="col-7 col-md-2 mb-md-0 text-right small text-muted">30/4/2020</dd>
+                          </dl>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <footer class="text-center pt-3">
+        </main>
+            <nav class="navbar fixed-bottom navbar-light bg-white d-block d-lg-none p-0 border-top">
+              <div class="list-group list-group-horizontal">
+                <div class="list-group-item border-0 flex-fill"><a class="btn btn-success btn-block" href="sign_up.html">Đăng ký</a></div>
+                <div class="list-group-item border-0 flex-fill"><a class="btn btn-light btn-block" href="sign_in.html">Đăng nhập</a></div>
+              </div>
+            </nav>
+    <footer class="text-center pt-3 d-none d-sm-block">
       <div class="container">
         <ul class="list-unstyled">
           <li class="list-inline-item"><a href="#">Về dự án</a></li>

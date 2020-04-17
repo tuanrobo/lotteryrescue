@@ -4,138 +4,139 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Create New Post</title>
-    <link rel="stylesheet" href="./css/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
   </head>
   <body class="bg-light">
-        <header class="shadow-sm border-bottom bg-white">
-          <nav class="navbar navbar-expand-xl">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index-logged_in.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-menu" aria-controls="top-menu" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
-              <form class="form-inline">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <div class="input-group-text border-0"><i class="material-icons">search</i></div>
-                  </div>
-                  <label class="sr-only">Tìm người nghèo</label>
-                  <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
-                </div>
-              </form>
-              <div class="collapse navbar-collapse" id="top-menu">
-                <ul class="navbar-nav ml-auto list-unstyled">
-                  <li class="list-inline-item">
-                    <div class="btn-group"><a class="btn btn-md btn-link text-muted" id="notification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons">notifications</i></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notification">
-                        <h6 class="dropdown-header">Tin nhắn</h6>
-                        <p class="px-4 small">Chưa có tin nhắn nào!</p>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Xem tất cả</a>
+            <header class="bg-white fixed-top">
+              <nav class="navbar navbar-expand-xl">
+                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index-logged_in.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a>
+                  <form class="form-inline">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text border-0"><i class="material-icons">search</i></div>
                       </div>
+                      <label class="sr-only">Tìm người nghèo</label>
+                      <input class="form-control border-left-0" type="text" placeholder="Tìm người nghèo">
                     </div>
-                  </li>
-                  <li class="list-inline-item">
-                    <div class="btn-group"><a class="btn btn-md btn-link" id="userMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Tuan.Nguyen</span></a>
-                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu"><a class="dropdown-item" href="user-management.html">Quản lý</a>
-                        <div class="dropdown-divider"></div><a class="dropdown-item" href="index.html">Thoát</a>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="list-inline-item"><a class="btn btn-md btn-success d-flex" href="create_new_post-step_1.html" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="left" title="Nhập kho để bắt đầu cho">Nhập kho để cho</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-    <section class="pt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-3">
-            <h3>Thông tin cần cho</h3>
-          </div>
-          <div class="col-12 col-md-8 mx-auto mb-5">
-            <ul class="progressbar list-unstyled">
-                  <li class="active"><small>Món cho</small></li>
-                  <li><small>Địa chỉ</small></li>
-                  <li><small>Hoàn thành</small></li>
-            </ul>
-          </div>
-          <div class="col-12 col-md-8 mx-auto card p-5 shadow border-0 mb-5">
-            <form>
-              <div class="row">
-                <div class="col-12 mb-5">
-                  <h4 class="mb-5 border-bottom pb-4">Chọn loại để cho</h4>
-                  <div class="accordion" id="goodsTypes">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <div class="form-group form-check mb-0">
-                          <input class="form-check-input" id="type1" type="checkbox" checked>
-                          <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Thực phẩm</label>
+                  </form>
+                  <ul class="navbar-nav ml-auto d-none d-lg-block">
+                    <li class="list-inline-item">
+                          <div class="btn-group"><a class="btn btn-md btn-link text-muted" id="notification" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="material-icons">notifications</i></a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="notification">
+                              <h6 class="dropdown-header">Tin nhắn</h6>
+                              <p class="px-4 small">Chưa có tin nhắn nào!</p>
+                              <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Xem tất cả</a>
+                            </div>
+                          </div>
+                    </li>
+                    <li class="list-inline-item">       
+                      <div class="btn-group"><a class="btn btn-md btn-link" id="userMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Tuan.Nguyen</span></a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu"><a class="dropdown-item" href="user-management.html">Quản lý</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item" href="index.html">Thoát</a>
                         </div>
                       </div>
-                      <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#goodsTypes">
-                        <div class="card-body">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label>Loại thực phẩm</label>
-                                <input class="form-control" type="text" placeholder="vd: Gạo" value="gạo">
+                    </li>
+                    <li class="list-inline-item"><a class="btn btn-md btn-success d-flex" href="create_new_post-step_1.html" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="left" title="Nhập kho để bắt đầu cho">Nhập kho để cho</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </header>
+        <main>
+          <div class="container">
+            <div class="row pt-3 pt-lg-5">
+              <div class="col-12 text-center mb-3">
+                <h3>Thông tin cần cho</h3>
+              </div>
+              <div class="col-12 col-md-8 mx-auto mb-5">
+                <ul class="progressbar list-unstyled">
+                      <li class="active"><small>Món cho</small></li>
+                      <li><small>Địa chỉ</small></li>
+                      <li><small>Hoàn thành</small></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-8 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-5">
+                <form>
+                  <div class="row">
+                    <div class="col-12 mb-5">
+                      <h4 class="mb-5 border-bottom pb-4">Chọn loại để cho</h4>
+                      <div class="accordion" id="goodsTypes">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <div class="form-group form-check mb-0">
+                              <input class="form-check-input" id="type1" type="checkbox" checked>
+                              <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type1" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Thực phẩm</label>
+                            </div>
+                          </div>
+                          <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#goodsTypes">
+                            <div class="card-body">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                    <label>Loại thực phẩm</label>
+                                    <input class="form-control" type="text" placeholder="vd: Gạo" value="gạo">
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <label>Số lượng</label>
+                                    <input class="form-control" type="number" placeholder="0" value="10">
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <label>Đơn vị</label>
+                                    <select class="form-control">
+                                      <option>Kg</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button class="btn btn-link">Thêm loại thực phẩm</button>
+                                </div>
                               </div>
                             </div>
-                            <div class="col-md-3">
-                              <div class="form-group">
-                                <label>Số lượng</label>
-                                <input class="form-control" type="number" placeholder="0" value="10">
-                              </div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <div class="form-group form-check mb-0">
+                              <input class="form-check-input" id="type2" type="checkbox">
+                              <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quần áo</label>
                             </div>
-                            <div class="col-md-3">
-                              <div class="form-group">
-                                <label>Đơn vị</label>
-                                <select class="form-control">
-                                  <option>Kg</option>
-                                </select>
-                              </div>
+                          </div>
+                          <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#goodsTypes">
+                            <div class="card-body">Quần áo												</div>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <div class="form-group form-check mb-0">
+                              <input class="form-check-input" id="type3" type="checkbox">
+                              <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Đồ dùng sinh hoạt</label>
                             </div>
-                            <div class="col-12">
-                              <button class="btn btn-link">Thêm loại thực phẩm</button>
-                            </div>
+                          </div>
+                          <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#goodsTypes">
+                            <div class="card-body">Content 3																							</div>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div class="card">
-                      <div class="card-header" id="headingTwo">
-                        <div class="form-group form-check mb-0">
-                          <input class="form-check-input" id="type2" type="checkbox">
-                          <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type2" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Quần áo</label>
-                        </div>
-                      </div>
-                      <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#goodsTypes">
-                        <div class="card-body">Quần áo												</div>
-                      </div>
-                    </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
-                        <div class="form-group form-check mb-0">
-                          <input class="form-check-input" id="type3" type="checkbox">
-                          <label class="font-weight-bold form-check-label d-flex align-items-center justify-content-between btn" for="type3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Đồ dùng sinh hoạt</label>
-                        </div>
-                      </div>
-                      <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#goodsTypes">
-                        <div class="card-body">Content 3																							</div>
-                      </div>
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between"><a class="btn btn-link" href="#">Thoát</a><a class="btn btn-lg btn-primary" href="create_new_post-step_2.html">Tiếp tục</a></div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12">
-                  <div class="d-flex justify-content-between"><a class="btn btn-link" href="#">Thoát</a><a class="btn btn-lg btn-primary" href="create_new_post-step_2.html">Tiếp tục</a></div>
-                </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <footer class="text-center pt-3">
+        </main>
+            <nav class="navbar fixed-bottom navbar-light bg-white d-block d-lg-none p-0 border-top">
+              <div class="list-group list-group-horizontal"><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">home</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#"><i class="material-icons">notifications</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#"><i class="material-icons">add</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">person</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#"><i class="material-icons">more_vert</i></a>
+              </div>
+            </nav>
+    <footer class="text-center pt-3 d-none d-sm-block">
       <div class="container">
         <ul class="list-unstyled">
           <li class="list-inline-item"><a href="#">Về dự án</a></li>

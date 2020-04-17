@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Management</title>
+    <title>Xuất</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css" crossorigin="anonymous">
@@ -45,28 +45,29 @@
             </header>
         <main>
           <div class="container">
-            <div class="row pt-3 pt-lg-5">
-              <div class="col-md-6 mx-auto">
-                <div class="card w-100 shadow-sm border-0 p-3 p-md-5">
-                  <div class="card-body p-2 p-lg-5">
-                    <p class="mb-2">Cám ơn bạn đã đăng ký và tham gia cùng chúng tôi, vui lòng cung cấp thông tin bên dưới để hoàn tất tạo hồ sơ của bạn.</p>
-                    <form>
+            <div class="row">
+              <div class="col-12 col-md-8 mx-auto mb-5">
+                <ul class="progressbar list-unstyled">
+                      <li class="finished"><small>số ĐT</small></li>
+                      <li class="active"><small>Món cho</small></li>
+                      <li><small>SMS code</small></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 mx-auto card py-4 p-md-5 shadow border-0 mb-5">
+                <form>
+                  <div class="row">
+                    <div class="col-12 mb-5">
+                      <h4 class="mb-5 border-bottom pb-4">Xuất kho</h4>
                       <div class="form-group">
-                        <label>Họ tên</label>
-                        <input class="form-control form-control-lg" type="text">
+                        <label class="sr-only">Nhập số điện thoại nhận</label>
+                        <input class="form-control form-control-lg" type="number" placeholder="Nhập số điện thoại nhận">
                       </div>
-                      <div class="form-group">
-                        <label>Email <small class="text-muted">(Tuỳ chọn)</small></label>
-                        <input class="form-control form-control-lg" type="email">
-                      </div>
-                      <div class="form-group">
-                        <label>Địa chỉ</label>
-                        <input class="form-control form-control-lg" type="text">
-                      </div>
-                      <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Cập nhật</button><a class="d-flex text-center text-danger" href="user-management.html"><i class="material-icons mr-3">link</i><small>Xong trang này sẽ qua trang quản lý{Dev xoá cái này}</small></a>
-                    </form>
+                    </div>
+                    <div class="col-12">
+                      <div class="d-flex justify-content-between"><a class="btn btn-link" href="#">Thoát</a><a class="btn btn-lg btn-primary" href="create_new_post-step_2.html">Tiếp tục</a></div>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
