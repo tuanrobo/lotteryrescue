@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tuanrobo/lotteryrescue#readme",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "bootstrap": "^4.4.1",
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",

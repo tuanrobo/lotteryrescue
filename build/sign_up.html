@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
   </head>
   <body class="bg-light">
-        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="notifications-mobile">
+        <div class="modal fade" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="notifications-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-header">
@@ -35,7 +36,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade modal-bottom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="action-mobile">
+        <div class="modal fade modal-bottom" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="action-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="create_new_post-step_1.html">Tôi muốn nhập qùa vào kho</a><a class="btn btn-lg btn-primary btn-block" href="export-step_1.html">Tôi muốn cho quà</a>
@@ -44,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade modal-bottom" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="more-mobile">
+        <div class="modal fade modal-bottom" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="more-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="index.html">Thoát tài khoản</a>
@@ -53,7 +54,7 @@
             </div>
           </div>
         </div>
-        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="search-mobile">
+        <div class="modal fade" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="search-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-header">
@@ -61,67 +62,77 @@
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times; </span></button>
               </div>
               <div class="modal-body">
-                <div class="list-group list-group-flush"><a class="list-group-item list-group-item-action flex-column align-items-start active" href="#">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">List group item heading</h5><small>3 days ago</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small>Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a><a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">List group item heading</h5><small class="text-muted">3 days ago</small>
-                    </div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p><small class="text-muted">Donec id elit non mi porta.</small></a></div>
+                <form>
+                  <div class="form-group">
+                        <input class="form-control form-control-lg" type="text" placeholder="Tìm theo số ĐT hoặc tên" value="">
+                  </div>
+                  <div class="form-group">
+                    <label>Tìm theo khu vực</label>
+                  </div>
+                  <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option default>Tỉnh/Thành phố</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option default>Quận/Huyện</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                  </div>
+                  <div class="form-group">
+                        <select class="form-control form-control-lg">
+                          <option default>Phường/Xã</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                  </div>
+                  <div class="form-group"><a class="btn btn-lg btn-primary btn-block" href="search-result.html">Tìm</a></div>
+                </form>
               </div><span class="modal-footer">
                 <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
             </div>
           </div>
         </div>
-            <header class="bg-white fixed-top">
-              <nav class="navbar navbar-expand-xl">
-                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a><a class="btn btn-light d-flex" href="#" data-target="#search-mobile" data-toggle="modal"><i class="material-icons mr-2">search</i><span class="text-muted font-weight-normal">Tìm người nghèo</span></a>
-                  <ul class="navbar-nav ml-auto d-none d-lg-block">
-                    <li class="list-inline-item"><a class="btn btn-md btn-success btn-block" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
-                    <li class="list-inline-item"><a class="btn btn-md btn-light btn-block" href="sign_in.html" role="button" aria-pressed="true">Đăng nhập</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </header>
+        <header class="bg-white fixed-top">
+          <nav class="navbar navbar-expand-xl px-0">
+            <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
+              <h5 class="text-center mx-auto mb-0">Đăng ký</h5><a class="btn d-flex" href=""><i class="material-icons"></i></a>
+            </div>
+          </nav>
+        </header>
         <main>
           <div class="container">
-            <div class="row pt-3 pt-lg-5 d-flex align-items-center">
-              <div class="col-12">
-                <h2 class="text-center mb-2 mb-md-5">Đăng ký</h2>
-              </div>
-              <div class="col-md-6 mx-auto mb-4">
-                <div class="card w-100 shadow-sm border-0 p-3 p-md-5">
-                  <form>
-                    <div class="form-group">
-                      <label>Nhập số điện thoại</label>
-                          <input class="form-control form-control-lg is-valid" type="tel" placeholder="" value="0908124966" id="test" required>
-                      <div class="valid-feedback">Đã nhập đúng!</div>
+            <div class="row pt-lg-5 d-flex align-items-center">
+              <div class="col-md-6 mx-auto mb-4 card w-100 shadow-sm border-0 p-3 p-md-5">
+                <form>
+                  <div class="form-group">
+                    <label>Nhập số điện thoại</label>
+                        <input class="form-control form-control-lg is-valid" type="tel" placeholder="" value="0908124966" id="test" required>
+                    <div class="valid-feedback">Đã nhập đúng!</div>
+                  </div>
+                  <div class="form-group">
+                    <label>Chọn mật khẩu</label>
+                        <input class="form-control form-control-lg is-invalid" type="password" placeholder="Tối thiểu 8 ký tự" value="">
+                    <div class="invalid-feedback">Chưa nhập mật khẩu</div>
+                  </div>
+                  <div class="form-group form-check">
+                    <input class="form-check-input" id="exampleCheck1" type="checkbox">
+                    <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <button class="btn btn-lg btn-light btn-block mb-4" type="submit">Huỷ</button>
                     </div>
-                    <div class="form-group">
-                      <label>Chọn mật khẩu</label>
-                          <input class="form-control form-control-lg is-invalid" type="password" placeholder="Tối thiểu 8 ký tự" value="">
-                      <div class="invalid-feedback">Chưa nhập mật khẩu</div>
-                    </div>
-                    <div class="form-group form-check">
-                      <input class="form-check-input" id="exampleCheck1" type="checkbox">
-                      <label class="form-check-label" for="exampleCheck1">Tôi đồng ý các điều khoản blah blah</label>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <button class="btn btn-lg btn-light btn-block mb-4" type="submit">Huỷ</button>
-                      </div>
-                      <div class="col-md-6">
-                        <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Đăng Ký</button>
-                      </div>
-                    </div><small class="form-text text-muted">Ở bước tiếp theo bạn sẽ nhận được mã xác nhận số điện thoại gửi qua SMS</small><a class="d-flex text-center text-danger" href="sign_up-confirmation.html"><i class="material-icons mr-3">link</i><small>Bước xác thực{Dev xoá cái này}</small></a>
-                  </form>
-                </div>
+                    <div class="col-md-6"><a class="btn btn-lg btn-primary btn-block mb-4" href="sign_up-confirmation.html">Đăng Ký</a></div>
+                  </div><small class="form-text text-muted">Ở bước tiếp theo bạn sẽ nhận được mã xác nhận số điện thoại gửi qua SMS</small>
+                </form>
               </div>
               <div class="col-12 text-center">
                 <p>Bạn đã có tài khoản?</p><a class="btn btn-link btn-outline-primary" href="sign_in.html">Đăng nhập</a>
@@ -129,12 +140,6 @@
             </div>
           </div>
         </main>
-            <nav class="navbar fixed-bottom navbar-light bg-white d-block d-lg-none p-0 border-top">
-              <div class="list-group list-group-horizontal">
-                <div class="list-group-item border-0 flex-fill"><a class="btn btn-success btn-block" href="sign_up.html">Đăng ký</a></div>
-                <div class="list-group-item border-0 flex-fill"><a class="btn btn-light btn-block" href="sign_in.html">Đăng nhập</a></div>
-              </div>
-            </nav>
     <footer class="text-center pt-3 d-none d-sm-block">
       <div class="container">
         <ul class="list-unstyled">
