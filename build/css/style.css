@@ -99,3 +99,30 @@ a {
   bottom: 0;
   left: 0;
   right: 0; }
+
+.box-circle:before {
+  content: "";
+  display: block;
+  padding-top: 100%; }
+
+.box-circle small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.right-0 {
+  right: 0; }
+
+.top-0 {
+  top: 0; }
+
+.notification-alert {
+  width: .5rem;
+  top: 0.625rem;
+  right: 1.25rem; }
