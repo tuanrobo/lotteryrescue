@@ -6,6 +6,7 @@
     <title>Management</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
   </head>
@@ -54,7 +55,8 @@
         <div class="modal fade modal-bottom animated slideInUp" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="more-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
-              <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="index.html">Thoát tài khoản</a>
+              <div class="modal-body">
+                <div class="list-group list-group-flush mb-3"><a class="list-group-item d-flex" href="#"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="#"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="#"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a></div><a class="btn btn-lg btn-primary btn-block" href="index.html">Thoát tài khoản</a>
               </div><span class="modal-footer">
                 <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
             </div>
@@ -106,6 +108,8 @@
             </div>
           </div>
         </div>
+        <div class="list-group list-group-horizontal shadow-sm fixed-bottom mb-5"><a class="list-group-item list-group-item-action d-flex align-items-center" href="create_package-step_1.html"><i class="fas fa-boxes mr-4"></i><strong>Tạo quà</strong></a><a class="list-group-item list-group-item-action d-flex align-items-center" href="export-start.html"> <i class="fas fa-pallet mr-4"></i><strong>Cho quà</strong></a>
+        </div>
             <header class="bg-white fixed-top">
               <nav class="navbar navbar-expand-xl">
                 <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index-logged_in.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a><a class="btn btn-light d-flex w-xs-100" href="#" data-target="#search-mobile" data-toggle="modal"><i class="material-icons mr-2">search</i><span class="text-muted font-weight-normal">Tìm người nghèo</span></a>
@@ -126,90 +130,46 @@
                         </div>
                       </div>
                     </li>
-                    <li class="list-inline-item"><a class="btn btn-md btn-danger" href="export-start.html" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="left" title="Nhập kho để bắt đầu cho"><span class="d-flex"><i class="material-icons mr-3">favorite</i>Bắt đầu cho</span></a></li>
+                    <li class="list-inline-item"><a class="btn btn-md btn-danger" href="export-start.html" role="button" aria-pressed="true" data-toggle="tooltip" data-placement="left" title="Nhập kho để bắt đầu cho"><span class="d-flex"><i class="material-icons mr-3">favorite</i>Tạo quà để cho</span></a></li>
                   </ul>
                 </div>
               </nav>
             </header>
         <main>
           <div class="container">
-            <div class="row pt-3 pt-lg-5">
-              <div class="col-lg-8 mx-auto">
-                <div class="row">
-                  <div class="col-12"><a class="btn btn-lg btn-primary fixed-top fixed-lg-none fixed-xl-none mb-5 btn-block rounded-0" href="create_new_post-step_1.html"><span class="d-flex align-items-center justify-content-center"><i class="material-icons mr-3">forward</i><i class="material-icons mr-3">storefront</i></span><small class="text-uppercase">Nhập kho</small></a></div>
-                  <div class="col-12">
-                    <div class="card mb-3">
-                      <div class="card-header d-flex justify-content-between align-items-center"><strong>Kho của bạn				</strong></div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-light small text-muted d-none d-md-block">
-                          <div class="row">
-                            <div class="col-md-4"><span>Loại hàng</span></div>
-                            <div class="col-md-4"><span>Số lượng</span></div>
-                            <div class="col-md-2"><span>Qui đổi $</span></div>
-                            <div class="col-md-2"><span>Nhập lúc</span></div>
-                          </div>
-                        </li>
-                        <li class="list-group-item">
-                          <dl class="row no-gutters mb-0">
-                            <dt class="col-5 d-block d-md-none">Loại hàng:</dt>
-                            <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">Gạo									</dd>
-                            <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
-                            <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">10kg</dd>
-                            <dt class="col-5 d-block d-md-none">Quy đổi $:  </dt>
-                            <dd class="col-7 col-md-2 mb-md-0 text-right text-md-left">100Kđ</dd>
-                            <dt class="col-5 d-block d-md-none">Nhập lúc:</dt>
-                            <dd class="col-7 col-md-2 mb-md-0 text-right"> <small class="text-muted">1/4/2020</small></dd>
-                          </dl>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="card">
-                      <div class="card-header d-flex justify-content-between align-items-center"><strong>Đã cho						</strong></div>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-light small text-muted d-none d-md-block">
-                          <div class="row">
-                            <div class="col-md-4"><span>Người nhận</span></div>
-                            <div class="col-md-4"><span>Đã nhận</span></div>
-                            <div class="col-md-2"><span>Số lượng</span></div>
-                            <div class="col-md-2"><span class="sr-only">Thời gian</span></div>
-                          </div>
-                        </li>
-                        <li class="list-group-item">
-                          <dl class="row no-gutters mb-0">
-                            <dt class="col-5 d-block d-md-none">Người nhận:  </dt>
-                            <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">0907 *** 164</dd>
-                            <dt class="col-5 d-block d-md-none">Đã nhận:  </dt>
-                            <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">Gạo</dd>
-                            <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
-                            <dd class="col-7 col-md-2 mb-md-0 text-right text-md-left">10kg</dd>
-                            <dt class="col-5 d-block d-md-none">Ngày cho: </dt>
-                            <dd class="col-7 col-md-2 mb-md-0 text-right"><small class="text-muted">30/4/2020</small></dd>
-                          </dl>
-                        </li>
-                        <li class="list-group-item">
-                          <dl class="row no-gutters mb-0">
-                            <dt class="col-5 d-block d-md-none">Người nhận:  </dt>
-                            <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">0907 *** 164</dd>
-                            <dt class="col-5 d-block d-md-none">Đã nhận:  </dt>
-                            <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">Gạo</dd>
-                            <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
-                            <dd class="col-7 col-md-2 mb-md-0 text-right text-md-left">10kg</dd>
-                            <dt class="col-5 d-block d-md-none">Ngày cho: </dt>
-                            <dd class="col-7 col-md-2 mb-md-0 text-right"><small class="text-muted">30/4/2020</small></dd>
-                          </dl>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            <div class="row pt-3">
+              <div class="col-12">
+                <div class="card mb-3">
+                  <div class="card-header d-flex justify-content-between align-items-center"><strong>Kho của bạn				</strong></div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg-light small text-muted d-none d-md-block">
+                      <div class="row">
+                        <div class="col-md-4"><span>Loại hàng</span></div>
+                        <div class="col-md-4"><span>Số lượng</span></div>
+                        <div class="col-md-2"><span>Qui đổi $</span></div>
+                        <div class="col-md-2"><span>Cập nhật lúc</span></div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <dl class="row no-gutters mb-0">
+                        <dt class="col-5 d-block d-md-none">Loại hàng:</dt>
+                        <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">Gạo									</dd>
+                        <dt class="col-5 d-block d-md-none">Số lượng:  </dt>
+                        <dd class="col-7 col-md-4 mb-md-0 text-right text-md-left">10kg</dd>
+                        <dt class="col-5 d-block d-md-none">Quy đổi $:  </dt>
+                        <dd class="col-7 col-md-2 mb-md-0 text-right text-md-left">100Kđ</dd>
+                        <dt class="col-5 d-block d-md-none">Cập nhật lúc:</dt>
+                        <dd class="col-7 col-md-2 mb-md-0 text-right"> <small class="text-muted">12:00AM 1/4/2020</small></dd>
+                      </dl>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </main>
             <nav class="navbar fixed-bottom navbar-light bg-white d-block d-lg-none p-0 border-top">
-              <div class="list-group list-group-horizontal"><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="index-logged_in.html"><i class="material-icons">home</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="material-icons">storefront</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center bg-transparent animated heartBeat" href="export-start.html"><i class="material-icons text-danger">favorite</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-toggle="modal" data-target="#notifications-mobile"><span class="box-circle position-absolute notification-alert"><small class="bg-danger rounded-circle text-white"><span class="sr-only">99</span></small></span><i class="material-icons">notifications</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-toggle="modal" data-target="#more-mobile"><i class="material-icons">person</i></a>
+              <div class="list-group list-group-horizontal"><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center bg-transparent animated heartBeat" href="user-management.html"><i class="fas fa-warehouse"></i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="history.html"><i class="material-icons">history</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-toggle="modal" data-target="#notifications-mobile"><span class="box-circle position-absolute notification-alert"><small class="bg-danger rounded-circle text-white"><span class="sr-only">99</span></small></span><i class="material-icons">notifications</i></a><a class="btn btn-link list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-toggle="modal" data-target="#more-mobile"><i class="material-icons">person</i></a>
               </div>
             </nav>
     <footer class="text-center pt-3 d-none d-sm-block">

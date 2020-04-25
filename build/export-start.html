@@ -6,6 +6,7 @@
     <title>Bắt đầu</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
   </head>
@@ -54,7 +55,8 @@
         <div class="modal fade modal-bottom animated slideInUp" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="more-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
-              <div class="modal-body"><a class="btn btn-lg btn-primary btn-block" href="index.html">Thoát tài khoản</a>
+              <div class="modal-body">
+                <div class="list-group list-group-flush mb-3"><a class="list-group-item d-flex" href="#"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="#"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="#"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a></div><a class="btn btn-lg btn-primary btn-block" href="index.html">Thoát tài khoản</a>
               </div><span class="modal-footer">
                 <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
             </div>
@@ -115,7 +117,7 @@
         </header>
         <main>
           <div class="container">
-            <div class="row pt-3 pt-lg-5">
+            <div class="row pt-lg-5">
               <div class="col-12 col-md-8 mx-auto mb-5 d-none">
                 <ul class="progressbar list-unstyled">
                       <li class="active"><small>số ĐT</small></li>
@@ -123,13 +125,15 @@
                       <li><small>SMS code</small></li>
                 </ul>
               </div>
-              <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-5">
+              <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-4">
                 <div class="row">
-                  <div class="col-12"><i class="material-icons text-danger mx-auto d-block text-center mb-3" style="font-size: 60px">redeem</i>
+                  <div class="col-12"><i class="fas fa-gifts text-danger d-block text-center my-5 h1" style="font-size: 60px"></i>
                     <p>Bạn đang tham gia chương trình từ thiện, để gửi quà đến người nhận bạn bắt đầu những bước sau.</p>
                     <p>Team content hỗ trợ nhập nội dung giới thiệu cũng như hướng dẫn cho user mới bắt đầu tham gia tại đây nhé.</p><a class="btn btn-lg btn-primary btn-block" href="export-step_1.html">Bắt đầu</a>
                   </div>
                 </div>
+              </div>
+              <div class="col-12 d-flex align-items-center justify-content-center"><span class="mr-3">Bạn chưa tạo quà tặng?</span><a class="btn btn-link btn-outline-primary" href="create_package-step_1.html">Tạo quà</a>
               </div>
             </div>
           </div>

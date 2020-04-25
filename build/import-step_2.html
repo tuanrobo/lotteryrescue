@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Đăng ký</title>
+    <title>Create New Post</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -111,20 +111,59 @@
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
             <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
-              <h5 class="text-center mx-auto mb-0">Nhập mã xác thực</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+              <h5 class="text-center mx-auto mb-0">Thực phẩm</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-6 mx-auto mb-4 card w-100 shadow-lg border-0 p-3 p-md-5">
+            <div class="row pt-lg-5">
+              <div class="col-12 col-md-8 mx-auto mb-5 d-none">
+                <ul class="progressbar list-unstyled">
+                      <li class="finished"><small>Món cho</small></li>
+                      <li class="finished"><small>Địa chỉ</small></li>
+                      <li class="active"><small>Hoàn thành</small></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 mx-auto card p-3 p-lg-5 shadow-sm border-0 mb-5">
                 <form>
-                  <div class="form-group">
-                    <label>Vui lòng nhập mã xác thực vừa gửi cho số điện thoại 090****746</label>
-                        <input class="form-control form-control-lg" type="number" placeholder="SMS CODE" value="">
-                  </div><a class="btn btn-lg btn-primary btn-block mb-4" href="sign_up-finish.html">Xác thực					</a>
-                  <button class="btn btn-link btn-block" type="submit" disabled>Gửi lại mã xác thực						</button>
+                  <div class="row">
+                    <div class="col-md-6 col-lg-12">
+                      <div class="form-group">
+                        <label>Thực phẩm</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="vd: Gạo" value="">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-12">
+                      <div class="form-group">
+                        <label>Tổng số bạn có</label>
+                        <div class="input-group row no-gutters">
+                          <div class="input-group-prepend col-6">
+                                <input class="form-control form-control-lg" type="number" placeholder="" value="100">
+                          </div>
+                              <select class="form-control form-control-lg col-6">
+                                <option>kg</option>
+                                <option>gram</option>
+                              </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Số lượng, khối lượng / 1 phần quà</label>
+                        <div class="input-group row no-gutters">
+                          <div class="input-group-prepend col-6">
+                                <input class="form-control form-control-lg" type="number" placeholder="0.00" value="">
+                          </div>
+                              <select class="form-control form-control-lg col-6">
+                                <option>gram</option>
+                                <option>kg</option>
+                              </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12"><a class="btn btn-lg btn-primary btn-block fixed-bottom" href="import-finish.html">Hoàn thành</a></div>
+                  </div>
                 </form>
               </div>
             </div>

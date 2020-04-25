@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Đăng ký</title>
+    <title>Create New Post</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -110,21 +110,29 @@
         </div>
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
-            <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
-              <h5 class="text-center mx-auto mb-0">Nhập mã xác thực</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+            <div class="container flex-nowrap"><a class="btn d-flex" href="user-management.html"><i class="material-icons">close</i></a>
+              <h5 class="text-center mx-auto mb-0">Chọn hàng nhập</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-6 mx-auto mb-4 card w-100 shadow-lg border-0 p-3 p-md-5">
+            <div class="row pt-3 pt-lg-5">
+              <div class="col-12 col-md-8 mx-auto mb-5 d-none">
+                <ul class="progressbar list-unstyled">
+                      <li class="active"><small>Món cho</small></li>
+                      <li><small>Địa chỉ</small></li>
+                      <li><small>Hoàn thành</small></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-5">
                 <form>
-                  <div class="form-group">
-                    <label>Vui lòng nhập mã xác thực vừa gửi cho số điện thoại 090****746</label>
-                        <input class="form-control form-control-lg" type="number" placeholder="SMS CODE" value="">
-                  </div><a class="btn btn-lg btn-primary btn-block mb-4" href="sign_up-finish.html">Xác thực					</a>
-                  <button class="btn btn-link btn-block" type="submit" disabled>Gửi lại mã xác thực						</button>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="list-group"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><span>Thực phẩm</span><i class="material-icons">chevron_right</i></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><span>Quần áo</span><i class="material-icons">chevron_right</i></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><span>Khác...</span><i class="material-icons">chevron_right</i></a>
+                      </div>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>

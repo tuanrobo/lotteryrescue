@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Đăng ký</title>
+    <title>Management</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -110,21 +110,29 @@
         </div>
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
-            <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
-              <h5 class="text-center mx-auto mb-0">Nhập mã xác thực</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+            <div class="container flex-nowrap"><span class="btn invisible"><i class="material-icons">pause</i></span>
+              <h5 class="text-center mx-auto mb-0">Hoàn tất đăng ký</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-6 mx-auto mb-4 card w-100 shadow-lg border-0 p-3 p-md-5">
+            <div class="row pt-lg-5">
+              <div class="col-md-6 mx-auto mb-4 card w-100 shadow-sm border-0 p-3 p-md-5">
+                <p class="mb-2">Cám ơn bạn đã đăng ký và tham gia cùng chúng tôi, vui lòng cung cấp thông tin bên dưới để hoàn tất tạo hồ sơ của bạn.</p>
                 <form>
                   <div class="form-group">
-                    <label>Vui lòng nhập mã xác thực vừa gửi cho số điện thoại 090****746</label>
-                        <input class="form-control form-control-lg" type="number" placeholder="SMS CODE" value="">
-                  </div><a class="btn btn-lg btn-primary btn-block mb-4" href="sign_up-finish.html">Xác thực					</a>
-                  <button class="btn btn-link btn-block" type="submit" disabled>Gửi lại mã xác thực						</button>
+                    <label>Họ tên</label>
+                    <input class="form-control form-control-lg" type="text">
+                  </div>
+                  <div class="form-group">
+                    <label>Email <small class="text-muted">(Tuỳ chọn)</small></label>
+                    <input class="form-control form-control-lg" type="email">
+                  </div>
+                  <div class="form-group">
+                    <label>Địa chỉ</label>
+                    <input class="form-control form-control-lg" type="text">
+                  </div><a class="btn btn-lg btn-primary btn-block mb-4" href="user-management.html">Cập nhật</a>
                 </form>
               </div>
             </div>

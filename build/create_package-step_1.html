@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Đăng ký</title>
+    <title>Create New Post</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -108,24 +108,37 @@
             </div>
           </div>
         </div>
+        <div class="modal fade modal-bottom animated slideInUp" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="goodsCategories">
+          <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content rounded-0 border-0">
+              <div class="modal-body">
+                <p class="text-muted">Chọn món bạn muốn tặng</p>
+                <div class="list-group"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Gạo</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Quần áo</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Khác</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a>
+                </div>
+              </div><span class="modal-footer">
+                <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
+            </div>
+          </div>
+        </div>
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
-            <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
-              <h5 class="text-center mx-auto mb-0">Nhập mã xác thực</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+            <div class="container flex-nowrap"><a class="btn d-flex" href="user-management.html"><i class="material-icons">close</i></a>
+              <h5 class="text-center mx-auto mb-0">Tạo quà</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
-            <div class="row d-flex align-items-center">
-              <div class="col-md-6 mx-auto mb-4 card w-100 shadow-lg border-0 p-3 p-md-5">
-                <form>
-                  <div class="form-group">
-                    <label>Vui lòng nhập mã xác thực vừa gửi cho số điện thoại 090****746</label>
-                        <input class="form-control form-control-lg" type="number" placeholder="SMS CODE" value="">
-                  </div><a class="btn btn-lg btn-primary btn-block mb-4" href="sign_up-finish.html">Xác thực					</a>
-                  <button class="btn btn-link btn-block" type="submit" disabled>Gửi lại mã xác thực						</button>
-                </form>
+            <div class="row pt-3 pt-lg-5">
+              <div class="col-12 col-md-8 mx-auto mb-5 d-none">
+                <ul class="progressbar list-unstyled">
+                      <li class="active"><small>Món cho</small></li>
+                      <li><small>Địa chỉ</small></li>
+                      <li><small>Hoàn thành</small></li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-8 col-lg-6 mx-auto"><a class="btn btn-success btn-block mb-5" href="#" data-toggle="modal" data-target="#goodsCategories">Chọn hàng cho vào giỏ quà</a>
+                <h4>Tổng số hộp quà được tạo: 0</h4><a class="btn btn-lg btn-primary fixed-bottom rounded-0" href="#" data-toggle="modal" data-target="#undefined">Hoàn tất</a>
               </div>
             </div>
           </div>
