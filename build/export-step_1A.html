@@ -111,33 +111,45 @@
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
             <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
-              <h5 class="text-center mx-auto mb-0">Người nhận</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+              <h5 class="text-center mx-auto mb-0">Tôi muốn cho</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
             <div class="row pt-lg-5">
-              <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-3">
+              <div class="col-12 col-md-8 col-lg-6 mx-auto card py-4 p-md-5 shadow border-0 mb-5">
                 <form>
                   <div class="row">
                     <div class="col-12">
                       <div class="form-group">
-                        <label>Số điện thoại người nhận quà</label>
-                            <input class="form-control form-control-lg" type="tel" placeholder="Nhập số điện thoại nhận" value="">
+                        <label>Loại thực phẩm</label>
+                            <input class="form-control form-control-lg" type="text" placeholder="vd: Gạo" value="">
                       </div>
-                      <div class="col-12 fixed-bottom mb-3"><a class="btn btn-lg btn-primary btn-block" href="export-step_3.html">Tiếp tục</a></div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="form-group">
+                        <label>Số lượng</label>
+                            <input class="form-control form-control-lg" type="number" placeholder="" value="">
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="form-group">
+                        <label>Đơn vị</label>
+                        <select class="form-control form-control-lg">
+                          <option>Kg</option>
+                          <option>tấn</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
                 </form>
               </div>
-              <div class="col-12">
-                    <div class="alert alert-info">Người nhận sẽ nhận được một SMS code dùng để xác nhận, bạn hãy xin mã này để nhập vào ở bước sau
-                    </div>
-              </div>
             </div>
           </div>
         </main>
+    <div class="col-12 fixed-bottom mb-3"><a class="btn btn-lg btn-primary btn-block" href="export-step_3.html">Chuyển</a>
+    </div>
     <footer class="text-center pt-3 d-none d-sm-block">
       <div class="container">
         <ul class="list-unstyled">

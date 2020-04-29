@@ -110,40 +110,57 @@
         </div>
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
-            <div class="container flex-nowrap"><a class="btn d-flex" href="user-management.html"><i class="material-icons">close</i></a>
-              <h5 class="text-center mx-auto mb-0">Người nhận</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+            <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">navigate_before</i></a>
+              <h5 class="text-center mx-auto mb-0">Tôi muốn cho</h5><a class="btn d-flex" href="export-history.html"><i class="material-icons">history</i></a>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
-            <div class="row pt-3 pt-lg-5">
-              <div class="col-12 col-md-8 mx-auto mb-5 d-none">
-                <ul class="progressbar list-unstyled">
-                      <li class="active"><small>số ĐT</small></li>
-                      <li><small>Món cho</small></li>
-                      <li><small>SMS code</small></li>
-                </ul>
-              </div>
-              <div class="col-12">
-                    <div class="alert alert-info">Người nhận sẽ nhận được một SMS code dùng để xác nhận, bạn hãy xin mã này để nhập vào ở bước sau
-                    </div>
-              </div>
-              <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-5">
+            <div class="row pt-lg-5">
+              <div class="col-12 col-md-8 col-lg-6 mx-auto card py-3 p-md-5 shadow-sm border-0 mb-3">
                 <form>
                   <div class="row">
                     <div class="col-12">
+                          <div class="alert alert-info">Vui lòng cho quà có hạn sử dụng tối thiểu 1 tháng
+                          </div>
                       <div class="form-group">
-                        <label>Số điện thoại người nhận quà</label>
-                            <input class="form-control form-control-lg" type="tel" placeholder="Nhập số điện thoại nhận" value="">
-                      </div><a class="btn btn-lg btn-primary btn-block" href="export-step_2.html">Tiếp tục			</a>
+                            <input class="form-control form-control-lg" type="text" placeholder="vd: Gạo" value="">
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="form-group">
+                        <label class="sr-only">Số lượng</label>
+                            <input class="form-control form-control-lg" type="number" placeholder="0" value="">
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                      <div class="form-group">
+                        <label class="sr-only">Đơn vị</label>
+                        <select class="form-control form-control-lg">
+                          <option>Kg</option>
+                          <option>tấn</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-secondary btn-lg btn-block"><i class="fas fa-check"></i>
+                      </button>
                     </div>
                   </div>
                 </form>
               </div>
+              <div class="col-12">
+                <div class="card p-0 mb-3">
+                  <div class="list-group list-group-flush p-0"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong><i class="fas fa-check text-success mr-3"></i>Gạo: <span>20 kg</span></strong><i class="fas fa-minus"></i></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong><i class="fas fa-check text-success mr-3"></i>Nước mắm: <span>30 lít</span></strong><i class="fas fa-minus"></i></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong><i class="fas fa-check text-success mr-3"></i>Dầu ăn: <span>10 chai (250ml)</span></strong><i class="fas fa-minus"></i></a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>
+    <div class="col-12 fixed-bottom mb-3"><a class="btn btn-lg btn-primary btn-block" href="export-step_2.html">Tiếp tục</a>
+    </div>
     <footer class="text-center pt-3 d-none d-sm-block">
       <div class="container">
         <ul class="list-unstyled">

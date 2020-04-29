@@ -112,8 +112,9 @@
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-body">
-                <p class="text-muted">Chọn món bạn muốn tặng</p>
-                <div class="list-group"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Gạo</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Quần áo</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Khác</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a>
+                <p class="text-muted">Các món bạn đã chọn</p>
+                <div class="list-group">
+                  <div class="list-group-item list-group-item-action d-flex justify-content-between align-items-center"></div><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Gạo</strong><span class="d-flex"><i class="material-icons">remove_circle</i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Quần áo</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong>Khác</strong><span class="d-flex"><i class="material-icons">chevron_right</i></span></a>
                 </div>
               </div><span class="modal-footer">
                 <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
@@ -122,23 +123,44 @@
         </div>
         <header class="bg-white fixed-top">
           <nav class="navbar navbar-expand-xl px-0 border-bottom">
-            <div class="container flex-nowrap"><a class="btn d-flex" href="user-management.html"><i class="material-icons">close</i></a>
-              <h5 class="text-center mx-auto mb-0">Tạo quà</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
+            <div class="container flex-nowrap"><a class="btn d-flex" href="javascript:history.back()"><i class="material-icons">close</i></a>
+              <h5 class="text-center mx-auto mb-0">Tôi muốn tặng</h5><span class="btn invisible"><i class="material-icons">pause</i></span>
             </div>
           </nav>
         </header>
         <main>
           <div class="container">
-            <div class="row pt-3 pt-lg-5">
-              <div class="col-12 col-md-8 mx-auto mb-5 d-none">
-                <ul class="progressbar list-unstyled">
-                      <li class="active"><small>Món cho</small></li>
-                      <li><small>Địa chỉ</small></li>
-                      <li><small>Hoàn thành</small></li>
-                </ul>
+            <div class="row mt-lg-5">
+              <div class="col-12 col-lg-6 bg-white mx-auto pt-3">
+                <form class="row">
+                  <div class="col-12">
+                    <div class="form-group">
+                          <input class="form-control form-control-lg" type="text" placeholder="Nhập mặt hàng muốn tặng" value="Đường">
+                    </div>
+                    <div class="form-group">
+                      <label>Số lượng</label>
+                      <div class="input-group row no-gutters">
+                        <div class="input-group-prepend col-6">
+                              <input class="form-control form-control-lg" type="number" placeholder="" value="100">
+                        </div>
+                            <select class="form-control form-control-lg col-6">
+                              <option>kg</option>
+                              <option>gram</option>
+                            </select>
+                        <div class="input-group-text">/ 1 phần</div>
+                      </div>
+                    </div>
+                    <button class="btn btn-secondary btn-lg btn-block mb-3">Chọn</button>
+                  </div>
+                  <div class="col-12">
+                    <div class="card p-0 mb-3">
+                      <div class="list-group list-group-flush p-0"><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong><i class="fas fa-check text-success mr-3"></i>Gạo: <span>20 kg</span></strong><i class="fas fa-minus"></i></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong><i class="fas fa-check text-success mr-3"></i>Nước mắm: <span>30 lít</span></strong><i class="fas fa-minus"></i></a><a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" href="import-step_2.html"><strong><i class="fas fa-check text-success mr-3"></i>Dầu ăn: <span>10 chai (250ml)</span></strong><i class="fas fa-minus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="col-12 col-md-8 col-lg-6 mx-auto"><a class="btn btn-success btn-block mb-5" href="#" data-toggle="modal" data-target="#goodsCategories">Chọn hàng cho vào giỏ quà</a>
-                <h4>Tổng số hộp quà được tạo: 0</h4><a class="btn btn-lg btn-primary fixed-bottom rounded-0" href="#" data-toggle="modal" data-target="#undefined">Hoàn tất</a>
+              <div class="col-12 fixed-bottom mb-3"><a class="btn btn-lg btn-primary btn-block" href="create_package-step_3.html">Tiếp tục</a>
               </div>
             </div>
           </div>
