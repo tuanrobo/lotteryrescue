@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Homepage</title>
+    <title>Trang chủ</title>
     <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
   </head>
-  <body class="bg-light">
+  <body class="bg-light d-flex flex-column">
         <div class="modal fade" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="notifications-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
@@ -56,7 +56,7 @@
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-body">
-                <div class="list-group list-group-flush"><a class="list-group-item d-flex text-decoration-none" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="settings.html"><i class="fas fa-sliders-h mr-3 d-flex align-items-center"></i>Cài đặt</a><a class="list-group-item d-flex" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a><a class="list-group-item d-flex" href="index.html"><i class="material-icons mr-3">exit_to_app</i>Thoát tài khoản</a>
+                <div class="list-group list-group-flush"><a class="list-group-item d-flex text-decoration-none" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="settings.html" aria-pressed="null"><i class="fas fa-sliders-h mr-3 d-flex align-items-center"></i>Cài đặt</a><a class="list-group-item d-flex" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a><a class="list-group-item d-flex" href="index.html" aria-pressed="null"><i class="material-icons mr-3">exit_to_app</i>Thoát tài khoản</a>
                 </div>
               </div><span class="modal-footer">
                 <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
@@ -118,15 +118,17 @@
         </div>
             <header class="bg-white fixed-top">
               <nav class="navbar navbar-expand-xl">
-                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index.html"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold d-none d-sm-block">C.I.H</small></a><a class="btn btn-light d-flex w-xs-100" href="#" data-target="#search-mobile" data-toggle="modal"><i class="material-icons mr-2">search</i><span class="text-muted font-weight-normal">Tìm người nghèo</span></a>
+                <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center" href="index.html" aria-pressed="null"><i class="material-icons mr-2" style="font-size: 40px">loyalty</i><small class="text-black-50 font-weight-bold">C.I.H</small></a>
                   <ul class="navbar-nav ml-auto d-none d-lg-block">
-                    <li class="list-inline-item"><a class="btn btn-md btn-success btn-block" href="sign_up.html" role="button" aria-pressed="true">Đăng ký</a></li>
-                    <li class="list-inline-item"><a class="btn btn-md btn-light btn-block" href="sign_in.html" role="button" aria-pressed="true">Đăng nhập</a></li>
+                    <li class="list-inline-item"><a class="btn btn-md btn-success btn-block" href="sign_up.html" aria-pressed="null" role="button">Đăng ký</a>
+                    </li>
+                    <li class="list-inline-item"><a class="btn btn-md btn-light btn-block" href="sign_in.html" aria-pressed="null" role="button">Đăng nhập				</a>
+                    </li>
                   </ul>
                 </div>
               </nav>
             </header>
-        <main>
+        <main class="h-100 d-flex align-items-center bg-primary" role="main">
           <div class="container">
             <div class="row pt-3 pt-lg-5">
               <div class="col-md-4 pl-md-5 order-md-2">
@@ -137,59 +139,6 @@
                       <p class="mb-4">Với những món đồ dùng hoặc thức ăn thực phẩm mà bạn có thể cho đi, chúng tôi sẽ đến nhận và chia sẻ đồ của bạn cho những hoàn cảnh khó hơn, đây là điều đáng trân trọng chúng tôi rất cám ơn và hoan nghênh tấm lòng của bạn.								</p><a class="btn btn-lg btn-warning mb-3" href="sign_up.html">Tham gia ngay!    </a><a class="btn btn-link text-warning" href="about.html">Tìm hiểu thêm</a>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <h4 class="mb-5 d-flex"><i class="material-icons mr-3 text-danger">storefront</i>Kho giải cứu mới	</h4>
-                    <div class="mb-3">
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-rich.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3003"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">rich user 3</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">rich lv 
-                                            <div class="badge badge-primary">3</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-rich.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3003"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">rich user 3</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">rich lv 
-                                            <div class="badge badge-primary">3</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-rich.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">rich user 5</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">rich lv 
-                                            <div class="badge badge-primary">5</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-rich.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">rich user 5</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">rich lv 
-                                            <div class="badge badge-primary">5</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                    </div>
-                  </div><a class="btn btn-link d-block" href="list-posts.html">Xem nhiều hơn</a>
                 </div>
               </div>
               <div class="col-md-8">
@@ -199,203 +148,7 @@
                       <div class="col-12 mb-4">
                         <h1 class="font-weight-extrabold">Chung Tay Giúp Đỡ Những Hoàn Cảnh Khó Khăn tại Việt Nam</h1>
                       </div>
-                      <div class="col-12">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-3"><i class="material-icons" style="font-size: 50px">redeem</i></div>
-                              <div class="col-9"><span class="h3">1000+</span>
-                                <p class="text-secondary">Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-3"><i class="material-icons" style="font-size: 50px">room</i></div>
-                              <div class="col-9"><span class="h3">1000+</span>
-                                <p class="text-secondary">Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-3"><i class="material-icons" style="font-size: 50px">people</i></div>
-                              <div class="col-9"><span class="h3">1000+</span>
-                                <p class="text-secondary">Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="row">
-                              <div class="col-3"><i class="material-icons" style="font-size: 50px">healing</i></div>
-                              <div class="col-9"><span class="h3">1000+</span>
-                                <p class="text-secondary">Là số lượng quà đã được trao cho người nghèo thông qua C.I.H</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 my-3">
-                    <hr>
-                  </div>
-                  <div class="col-12">
-                    <h4 class="mb-5 d-flex"><i class="material-icons mr-3 text-danger">favorite</i>Giải cứu thành công</h4>
-                    <div class="card-columns mb-3">
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 2</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">2</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3004"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 4</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">4</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 2</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">2</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 2</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">2</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3001"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 1</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">1</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 5</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">5</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                    </div>
-                  </div>
-                  <div class="col-12 my-3">
-                    <hr>
-                  </div>
-                  <div class="col-12">
-                    <h4 class="mb-5 d-flex"><i class="material-icons mr-3 text-muted">favorite</i>Hoàn cảnh mới phát hiện</h4>
-                    <div class="card-columns mb-3">
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 2</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">2</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 2</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">2</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 5</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">5</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 5</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">5</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 5</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">5</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                          <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                            <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html">
-                                    <div class="col-4 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3003"></div>
-                                    <div class="col-8 d-flex align-items-center">
-                                      <div class="text-dark w-100">
-                                        <h6 class="mb-1 d-block text-capitalize font-weight-bold">poor user 3</h6>
-                                        <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                            <div class="badge badge-primary">3</div></small></div>
-                                      </div>
-                                    </div></a>
-                            </div>
-                          </div>
-                    </div><a class="btn btn-link d-block" href="list-posts.html">Xem nhiều hơn</a>
                   </div>
                 </div>
               </div>
@@ -408,14 +161,14 @@
                 <div class="list-group-item border-0 flex-fill"><a class="btn btn-success btn-block" href="sign_up.html">Đăng ký</a></div>
               </div>
             </nav>
-    <footer class="text-center pt-3 d-none d-sm-block">
+    <footer class="text-center pt-3 d-none d-sm-block mt-auto">
       <div class="container">
         <ul class="list-unstyled">
           <li class="list-inline-item"><a href="#">Về dự án</a></li>
           <li class="list-inline-item"><a href="#">Liên Hệ</a></li>
         </ul>
         <p class="text-muted">"Mỗi đóng góp của bạn là một giọt nước giúp đất cằn nở hoa!</p>
-        <p><small class="text-black-50">Giải Cứu Vé Số © 2020</small></p>
+        <p><small class="text-black-50">Thông tin từ thiện © 2020</small></p>
       </div>
     </footer>
         <script src="js/jquery.min.js"></script>

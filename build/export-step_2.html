@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
   </head>
-  <body class="bg-light">
+  <body class="bg-light d-flex flex-column">
         <div class="modal fade" tabindex="-1" role="dialog" aria-belledby="exampleModalLabel" aria-hidden="true" id="notifications-mobile">
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
@@ -56,7 +56,7 @@
           <div class="modal-dialog modal-dialog-scrollable" role="document">
             <div class="modal-content rounded-0 border-0">
               <div class="modal-body">
-                <div class="list-group list-group-flush"><a class="list-group-item d-flex text-decoration-none" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="settings.html"><i class="fas fa-sliders-h mr-3 d-flex align-items-center"></i>Cài đặt</a><a class="list-group-item d-flex" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a><a class="list-group-item d-flex" href="index.html"><i class="material-icons mr-3">exit_to_app</i>Thoát tài khoản</a>
+                <div class="list-group list-group-flush"><a class="list-group-item d-flex text-decoration-none" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="list-group-item d-flex" href="settings.html" aria-pressed="null"><i class="fas fa-sliders-h mr-3 d-flex align-items-center"></i>Cài đặt</a><a class="list-group-item d-flex" href="#" aria-expanded="null" aria-controls="null" data-toggle="modal" data-target="#undefined"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a><a class="list-group-item d-flex" href="index.html" aria-pressed="null"><i class="material-icons mr-3">exit_to_app</i>Thoát tài khoản</a>
                 </div>
               </div><span class="modal-footer">
                 <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
@@ -123,7 +123,7 @@
             </div>
           </nav>
         </header>
-        <main>
+        <main class="h-100" role="main">
           <div class="container">
             <div class="row pt-lg-5">
               <div class="col-12 col-md-8 col-lg-6 mx-auto card p-3 p-sm-5 shadow-sm border-0 mb-3">
@@ -133,13 +133,13 @@
                         </div>
                         <div class="col-8">
                           <ul class="list-group">
-                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 p-2">1. Gạo
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 p-2">Gạo
                               <div class="badge badge-dark">20 kg</div>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 p-2">2. Nước mắm
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 p-2">Nước mắm
                               <div class="badge badge-dark">30 lít</div>
                             </li>
-                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 p-2">3. Đầu ăn
+                            <li class="list-group-item d-flex justify-content-between align-items-center border-0 p-2">Dầu ăn
                               <div class="badge badge-dark">10 chai(250ml)</div>
                             </li>
                           </ul>
@@ -153,7 +153,8 @@
                         <label>Số điện thoại người nhận quà</label>
                             <input class="form-control form-control-lg" type="tel" placeholder="Nhập số điện thoại nhận" value="">
                       </div>
-                      <div class="col-12 fixed-bottom mb-3"><a class="btn btn-lg btn-primary btn-block" href="export-step_3.html">Tiếp tục</a></div>
+                      <div class="col-12 fixed-bottom fixed-lg-bottom-none mb-3 px-3 px-lg-0"><a class="btn btn-lg btn-primary btn-block" href="export-step_3.html" aria-pressed="null">Tiếp tục</a>
+                      </div>
                     </div>
                   </div>
                 </form>
@@ -165,14 +166,14 @@
             </div>
           </div>
         </main>
-    <footer class="text-center pt-3 d-none d-sm-block">
+    <footer class="text-center pt-3 d-none d-sm-block mt-auto">
       <div class="container">
         <ul class="list-unstyled">
           <li class="list-inline-item"><a href="#">Về dự án</a></li>
           <li class="list-inline-item"><a href="#">Liên Hệ</a></li>
         </ul>
         <p class="text-muted">"Mỗi đóng góp của bạn là một giọt nước giúp đất cằn nở hoa!</p>
-        <p><small class="text-black-50">Giải Cứu Vé Số © 2020</small></p>
+        <p><small class="text-black-50">Thông tin từ thiện © 2020</small></p>
       </div>
     </footer>
         <script src="js/jquery.min.js"></script>
