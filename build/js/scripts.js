@@ -3,10 +3,9 @@ $(function () {
 	
 	var marginTop = function () {
 		$('main').each(function () {
-			var header = $('header').height();
-			// var main = $('main').height();
+			var header = $('header').height() / 16;
 			$(this).css({
-				'top': header,
+				'margin-top': header + 'rem',
 				// overflow: 'hidden'
 			})
 			// if (bannerHeight < innerHeight) {
