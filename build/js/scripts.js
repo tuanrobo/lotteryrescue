@@ -1,28 +1,15 @@
 $(function () {
 	$('[data-toggle="tooltip"]').tooltip();	
-	
-	var marginTop = function () {
-		$('main').each(function () {
-			var header = $('header').height() / 16;
-			$(this).css({
-				'margin-top': header + 'rem',
-				// overflow: 'hidden'
-			})
-			// if (bannerHeight < innerHeight) {
-			// 	$(this).css({
-			// 		'height': 'auto',
-			// 		'padding-top': '20px',
-			// 		'padding-bottom': '20px',
-			// 	})
-			// } else (
-			// 	$(this).css({
-			// 		'margin-top': bannerHeight,
-			// 		// overflow: 'hidden'
-			// 	})
-			// )
-		})
-	}
-	
-	$(window).on("load", marginTop)
-	$(window).on("resize", marginTop)
 });
+
+
+const spacingTop = () => {
+	var headerHeight = document.getElementById('header').offsetHeight / 16;
+	console.log('header height:', headerHeight)
+	return document.getElementById('main').style.marginTop= headerHeight + 'rem';	
+}
+console.log('margin top:', spacingTop())
+
+
+window.onload = spacingTop()
+window.onresize = spacingTop()
