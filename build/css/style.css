@@ -26,10 +26,10 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 a {
-  color: #00bae0; }
+  color: #3BA89D; }
 
 .jumbotron {
-  background-color: #00bae0; }
+  background-color: #3BA89D; }
 
 .form-group label, .input-group label {
   font-weight: 600; }
@@ -47,11 +47,22 @@ a {
 .btn {
   font-weight: 600; }
   .btn-primary {
-    background-color: #00bae0;
-    border: #00bae0; }
+    background-color: #3BA89D;
+    border: #3BA89D; }
+    .btn-primary:hover {
+      background-color: #379B91; }
+  .btn-link {
+    color: #3BA89D; }
+    .btn-link:hover {
+      color: #379B91; }
+  .btn-outline-primary {
+    border-color: #3BA89D; }
 
 .bg-primary {
-  background-color: #00bae0 !important; }
+  background-color: #3BA89D !important; }
+
+.text-primary {
+  color: #3BA89D !important; }
 
 html, body {
   height: 100%; }
@@ -176,3 +187,6 @@ html, body {
 @media (min-width: 0) and (max-width: 575px) {
   .w-xs-100 {
     width: 100%; } }
+
+.logo-header {
+  width: 32px; }
