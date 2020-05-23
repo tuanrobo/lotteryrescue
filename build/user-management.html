@@ -111,15 +111,11 @@
                   </div>
                   <div class="form-group"><a class="btn btn-lg btn-primary btn-block" href="search-result.html">Tìm</a></div>
                 </form>
-              </div><span class="modal-footer">
-                <button class="btn btn-sm btn-block" type="button" data-dismiss="modal">Đóng</button></span>
+              </div>
             </div>
           </div>
         </div>
-    <div class="col-12 fixed-bottom mb-5 d-lg-none">
-          <div class="list-group list-group-horizontal shadow mb-3"><a class="list-group-item list-group-item-action d-flex align-items-center justify-content-center bg-primary border-0 text-white rounded-lg" href="export-step_1.html" aria-pressed="null"><i class="fas fa-gift mr-3"></i><strong>Quyên góp</strong></a>
-          </div>
-    </div>
+    <div class="col-12 fixed-bottom mb-5 d-lg-none"></div>
             <header class="bg-white fixed-top" id="header">
               <nav class="navbar navbar-expand-xl px-0">
                 <div class="container flex-nowrap"><a class="navbar-brand d-flex align-items-center ml-3 ml-lg-0" href="index-logged_in.html" aria-pressed="null"><img class="img-fluid logo-header" src="./images/logo.svg"></a><a class="btn btn-light d-flex w-xs-100 mr-3 mr-lg-0" href="#" data-target="#search-mobile" data-toggle="modal"><i class="material-icons mr-2">search</i><span class="text-muted font-weight-normal">Tìm người nghèo</span></a>
@@ -135,13 +131,13 @@
                     </li>
                     <li class="list-inline-item">       
                       <div class="btn-group"><a class="btn btn-md btn-link text-muted" id="userMenu" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span>Tuan.Nguyen</span></a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu"><a class="dropdown-item" href="user-management.html">Quản lý</a>
-                          <div class="dropdown-divider"></div><a class="dropdown-item" href="index.html">Thoát</a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userMenu"><a class="dropdown-item d-flex text-decoration-none" href="user-management.html" aria-pressed="null"><i class="material-icons mr-3">person</i>Quản lý tài khoản</a><a class="dropdown-item d-flex text-decoration-none" href="user-management.html" aria-pressed="null"><i class="fas fa-sliders-h mr-3"></i>Cài đặt</a><a class="dropdown-item d-flex text-decoration-none" href="user-management.html" aria-pressed="null"><i class="material-icons mr-3">live_help</i>Hỗ trợ</a>
+                          <div class="dropdown-divider"></div><a class="dropdown-item d-flex text-decoration-none" href="index.html" aria-pressed="null"><i class="material-icons mr-3">exit_to_app</i>Thoát</a>
                         </div>
                       </div>
                     </li>
                     <li class="list-inline-item">
-                          <div class="list-group list-group-horizontal shadow"><a class="list-group-item list-group-item-action d-flex align-items-center justify-content-center bg-primary border-0 text-white rounded-lg" href="export-step_1.html" aria-pressed="null"><i class="fas fa-gift mr-3"></i><strong>Quyên góp</strong></a>
+                          <div class="list-group list-group-horizontal shadow"><a class="list-group-item list-group-item-action d-flex align-items-center justify-content-center bg-primary border-0 text-white rounded-lg" href="export-step_1.html" aria-pressed="null"><i class="fas fa-gift mr-3"></i><strong>Cho Quà</strong></a>
                           </div>
                     </li>
                   </ul>
@@ -151,20 +147,31 @@
         <main id="main" role="main">
           <div class="container h-100">
             <div class="row pt-3">
-              <div class="col-12 mb-3 mb-lg-5">
-                <h5 class="display-4 mb-3">Hi, Tuân Nguyễn!	</h5>
+              <div class="col-12 col-lg-6 mb-4 mb-lg-5">
+                <div class="card">
+                  <div class="card-header p-1">
+                    <ul class="nav nav-pills nav-justified" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation"><a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Cho</a></li>
+                      <li class="nav-item" role="presentation"><a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Nhận</a></li>
+                    </ul>
+                  </div>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-black-50">Gạo</span><span>100kg</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-black-50">Dầu ăn</span><span>200 chai (250ml)</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-black-50">Dầu ăn</span><span>10 chai (1 Lít)</span></li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center"><span class="text-black-50">Quần áo</span><span>10 bộ			</span></li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                      <div class="text-center p-3">Chưa nhận quà</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-12 col-lg-6 mb-3 mb-lg-5">
-                    <h6 class="text-muted text-center mb-4 text-uppercase font-weight-bold">Thống kê</h6>
-                <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center">Gạo<span class="badge badge-dark badge-pill">100kg</span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">Dầu ăn<span class="badge badge-dark badge-pill">200 chai (250ml)</span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">Dầu ăn<span class="badge badge-dark badge-pill">10 chai (1 Lít)</span></li>
-                  <li class="list-group-item d-flex justify-content-between align-items-center">Quần áo<span class="badge badge-dark badge-pill">10 bộ</span></li>
-                </ul>
-              </div>
-              <div class="col-12 col-lg-6 mb-3 mb-lg-5">
-                    <h6 class="text-muted text-center mb-4 text-uppercase font-weight-bold">Thành tích</h6>
+              <div class="col-12 col-lg-6 mb-4 mb-lg-5">
+                    <h6 class="text-muted text-center mb-3 text-uppercase font-weight-bold">Thành tích</h6>
                 <div class="list-group">
                   <div class="list-group-item">
                     <p class="mb-1"><i class="fas fa-heart text-danger mr-3"></i><i class="fas fa-heart text-danger mr-3"></i><i class="fas fa-heart text-danger mr-3"></i><i class="fas fa-heart text-danger mr-3"></i><i class="fas fa-heart text-danger mr-3"></i><small class="text-muted">(5 tim+)</small>
@@ -176,17 +183,41 @@
                   </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6 mb-3 mb-lg-5">
-                    <h6 class="text-muted text-center mb-4 text-uppercase font-weight-bold">Đang theo dõi</h6>
+              <div class="col-12 col-lg-6 mb-4 mb-lg-5">
+                    <h6 class="text-muted text-center mb-3 text-uppercase font-weight-bold">Đang theo dõi</h6>
                 <div class="mb-3">
+                      <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
+                        <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html" aria-pressed="null">
+                                <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3003"></div>
+                                <div class="col-8 d-flex align-items-center">
+                                  <div class="text-dark w-100">
+                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Nguyễn Văn Huy</h6>
+                                    <div class="w-100 d-block"><small class="badge badge-light font-weight-normal mb-2">poor lv 
+                                        <div class="badge badge-primary">3</div></small></div>
+                                  </div>
+                                </div></a>
+                        </div>
+                      </div>
                       <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
                         <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html" aria-pressed="null">
                                 <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3001"></div>
                                 <div class="col-8 d-flex align-items-center">
                                   <div class="text-dark w-100">
-                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Vũ Thị Huy</h6>
-                                    <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
+                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Vũ Thị Khánh</h6>
+                                    <div class="w-100 d-block"><small class="badge badge-light font-weight-normal mb-2">poor lv 
                                         <div class="badge badge-primary">1</div></small></div>
+                                  </div>
+                                </div></a>
+                        </div>
+                      </div>
+                      <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
+                        <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html" aria-pressed="null">
+                                <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
+                                <div class="col-8 d-flex align-items-center">
+                                  <div class="text-dark w-100">
+                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Nguyễn Thị Tiến</h6>
+                                    <div class="w-100 d-block"><small class="badge badge-light font-weight-normal mb-2">poor lv 
+                                        <div class="badge badge-primary">2</div></small></div>
                                   </div>
                                 </div></a>
                         </div>
@@ -196,8 +227,8 @@
                                 <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3004"></div>
                                 <div class="col-8 d-flex align-items-center">
                                   <div class="text-dark w-100">
-                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Võ Thị Khang</h6>
-                                    <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
+                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Tạ Công Tằng Khang</h6>
+                                    <div class="w-100 d-block"><small class="badge badge-light font-weight-normal mb-2">poor lv 
                                         <div class="badge badge-primary">4</div></small></div>
                                   </div>
                                 </div></a>
@@ -208,8 +239,8 @@
                                 <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3001"></div>
                                 <div class="col-8 d-flex align-items-center">
                                   <div class="text-dark w-100">
-                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Bùi Công Tằng Huy</h6>
-                                    <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
+                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Tạ Công Tằng Huy</h6>
+                                    <div class="w-100 d-block"><small class="badge badge-light font-weight-normal mb-2">poor lv 
                                         <div class="badge badge-primary">1</div></small></div>
                                   </div>
                                 </div></a>
@@ -220,33 +251,9 @@
                                 <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3005"></div>
                                 <div class="col-8 d-flex align-items-center">
                                   <div class="text-dark w-100">
-                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Vũ Công Tằng Huy</h6>
-                                    <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
+                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Nguyễn Văn Thảo</h6>
+                                    <div class="w-100 d-block"><small class="badge badge-light font-weight-normal mb-2">poor lv 
                                         <div class="badge badge-primary">5</div></small></div>
-                                  </div>
-                                </div></a>
-                        </div>
-                      </div>
-                      <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                        <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html" aria-pressed="null">
-                                <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3002"></div>
-                                <div class="col-8 d-flex align-items-center">
-                                  <div class="text-dark w-100">
-                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Vũ Văn Tiến</h6>
-                                    <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                        <div class="badge badge-primary">2</div></small></div>
-                                  </div>
-                                </div></a>
-                        </div>
-                      </div>
-                      <div class="card shadow-sm text-decoration-none mb-3 mb-md-4">
-                        <div class="card-body"><a class="stretched-link text-decoration-none row" href="user-profile-poor.html" aria-pressed="null">
-                                <div class="col-4 col-sm-2 pr-0"><img class="rounded-circle user-pic img-fluid mx-auto d-block" src="https://i.pravatar.cc/3003"></div>
-                                <div class="col-8 d-flex align-items-center">
-                                  <div class="text-dark w-100">
-                                    <h6 class="mb-1 d-block text-capitalize font-weight-bold">Võ Công Tằng Thảo</h6>
-                                    <div class="w-100 d-block"><small class="badge badge-light border mb-2">poor lv 
-                                        <div class="badge badge-primary">3</div></small></div>
                                   </div>
                                 </div></a>
                         </div>
@@ -257,7 +264,7 @@
           </div>
         </main>
             <nav class="navbar fixed-bottom navbar-light bg-white d-block d-lg-none p-0 border-top">
-              <div class="list-group list-group-horizontal"><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="user-management.html"><i class="fas fa-warehouse"></i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="history.html"><i class="material-icons">history</i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-toggle="modal" data-target="#notifications-mobile"><span class="box-circle position-absolute notification-alert"><small class="bg-danger rounded-circle text-white"><span class="sr-only">99</span></small></span><i class="material-icons">notifications</i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center" href="#" data-toggle="modal" data-target="#more-mobile"><i class="material-icons">person</i></a>
+              <div class="list-group list-group-horizontal"><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center text-black-50" href="user-management.html"><i class="fas fa-warehouse"></i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center text-black-50" href="history.html"><i class="material-icons">history</i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center text-black-50" href="export-step_1.html"><i class="fas fa-gift"></i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center text-black-50" href="#" data-toggle="modal" data-target="#notifications-mobile"><span class="box-circle position-absolute notification-alert"><small class="bg-danger rounded-circle text-white"><span class="sr-only">99</span></small></span><i class="material-icons">notifications</i></a><a class="btn list-group-item border-0 flex-fill d-flex align-items-center justify-content-center text-black-50" href="#" data-toggle="modal" data-target="#more-mobile"><i class="material-icons">person</i></a>
               </div>
             </nav>
         <footer class="text-center pt-3 d-none d-lg-block mt-auto">
@@ -272,7 +279,7 @@
         </footer>
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/scripts.js"></script>
   </body>
 </html>

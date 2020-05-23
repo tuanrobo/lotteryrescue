@@ -71,6 +71,9 @@ a {
 .text-primary {
   color: #3BA89D !important; }
 
+.nav-pills .nav-link.active {
+  background-color: #3BA89D; }
+
 html, body {
   height: 100%; }
 
