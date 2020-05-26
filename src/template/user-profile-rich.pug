@@ -1,0 +1,32 @@
+extends sections/layout/layout
+
+block title
+	title Chi tiết
+
+block content
+	+heading('Username Rich', 'navigate_before', 'javascript:history.back()','more_vert','#')
+		a.dropdown-item.d-flex(href='#')
+			+icon('add')(class='mr-3')
+			| Theo dõi
+		a.dropdown-item.d-flex(href='#')
+			+icon('flag')(class="mr-3")
+			| Báo cáo
+	//- +store-control
+	+main()
+		.row.mt-md-5
+			.col-lg-4.px-0.px-lg-3
+				+user-profile('rich')
+			.col-lg-8
+				.row
+					.col-12.mb-3.mb-lg-5
+						+subHeading('Đã cho gần đây')
+						+gift()
+						+gift()
+					.col-12.mb-3.mb-lg-5
+						+subHeading('Đang theo dõi')
+						- var n = 1;
+							.card-columns.mb-3
+								while n < 7
+									+user-card('poor',n++)
+				
+

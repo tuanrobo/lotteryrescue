@@ -1,0 +1,37 @@
+extends sections/layout/layout
+
+block title
+	title Đăng Nhập
+
+block content
+	+heading('Đăng nhập', 'navigate_before', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-0.pt-lg-5.d-flex.align-items-center
+			.col-md-6.mx-auto.mb-4.card.w-100.shadow-sm.border-0.p-3.p-md-5
+				form
+					.form-group
+						label.sr-only Số điện thoại
+						+input-lg('number','Số điện thoại')
+					.form-group
+						label.sr-only Mật khẩu
+						+input-lg('password','Mật khẩu')
+					.d-flex.justify-content-between.mb-3.align-items-center
+						.form-group.form-check.mb-0
+							input#loginAuto.form-check-input(type='checkbox')
+							label.form-check-label(for='loginAuto') Lưu tài khoản
+						a.btn.btn-link(href='#') Quên mật khẩu?
+					.mb-4
+						a.btn.btn-lg.btn-primary.btn-block(href='user-management.html') Đăng Nhập						
+				//- .col-12.mb-3
+				//- 	.row
+				//- 		.col
+				//- 			hr
+				//- 		.col.d-flex.align-items-center
+				//- 			small.text-muted.mx-auto Hoặc
+				//- 		.col
+				//- 			hr
+				//- .col-12.mb-3.px-0
+				//- 	button.btn.btn-lg.btn-block.btn-facebook(type='submit') Đăng Nhập bằng Facebook
+			.col-12.d-flex.align-items-center.justify-content-center
+					span.mr-3 Bạn chưa có tài khoản?
+					a.btn.btn-link.btn-outline-primary(href='sign_up.html') Đăng ký

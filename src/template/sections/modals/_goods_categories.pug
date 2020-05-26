@@ -1,0 +1,16 @@
++modal-page-mobile('','footer')(id='goodsCategories', class='modal-bottom animated slideInUp')
+	p.text-muted Các món bạn đã chọn
+	.list-group
+		.list-group-item.list-group-item-action.d-flex.justify-content-between.align-items-center
+		+link('list-group-item list-group-item-action d-flex justify-content-between align-items-center','import-step_2')
+			strong Gạo
+			span.d-flex
+				+icon('remove_circle')
+		+link('list-group-item list-group-item-action d-flex justify-content-between align-items-center','import-step_2')
+			strong Quần áo
+			span.d-flex
+				+icon('chevron_right')
+		+link('list-group-item list-group-item-action d-flex justify-content-between align-items-center','import-step_2')
+			strong Khác
+			span.d-flex
+				+icon('chevron_right')

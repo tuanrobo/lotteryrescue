@@ -1,0 +1,184 @@
+@import "variable";
+@import "mixin";
+@import "breakpoint";
+@import "typo";
+@import "validation";
+@import "form";
+@import "button";
+@import "override-bootstrap";
+
+html, body {
+  height: 100%;
+}
+
+.progressbar {
+  counter-reset: step;
+  li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    &:before {
+      content: counter(step);
+      counter-increment: step;
+      width: 40px;
+      height: 40px;
+      // border: 1px solid #2979ff;
+      color:  #00000038;
+      display: block;
+      text-align: center;
+      margin: 0 auto 10px auto;
+      border-radius: 50%;
+      background-color:#d8dadc;
+      line-height: 39px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #d8dadc;
+      top: 20px; /*half of height Parent (li) */
+      left: -50%;
+      z-index: -1;
+    }
+    &:first-child:after {
+      content: none;
+    }
+    &.active {
+      &:before {
+        background: #00e676;
+        color: #fff;
+        // content: "✔";
+      }
+      & + li:after{
+        background: #00e676;
+      }
+    }
+    &.finished {
+      &:before {
+        background: #00e676;
+        color: #fff;
+        content: "✓";
+      }
+      & + li:after{
+        background: #00e676;
+      }
+    }
+  }
+}
+
+.modal-bottom {
+  .modal-dialog {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right:0
+  }
+}
+
+.box-circle {
+  &:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+  small {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+}
+
+.right-0 {
+  right:0
+}
+
+.top-0 {
+  top:0
+}
+
+.notification-alert {
+  width: .5rem;
+  top: 0.625rem;
+  right: 1.25rem;
+}
+
+.fixed {
+  &-md {
+    &-bottom {
+      @include  md{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+      }
+    }
+    &-none {
+      @include md {
+        position: relative;
+      }
+    }
+  }
+  &-lg {
+    &-bottom {
+      @include xl{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+      }
+      &-none {
+        @include xl {
+          position: relative;
+        }
+      }
+    }
+    &-none {
+      @include lg {
+        position: relative;
+      }
+    }
+  }
+  &-xl {
+    &-bottom {
+      @include xl{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1030;
+      }
+    }
+    &-none {
+      @include xl {
+        position: relative;
+      }
+    }
+  }
+}
+
+.w {
+  &-xs {
+    &-100 {
+      @include xs {
+        width: 100%;
+      }    
+    }    
+  }
+}
+
+.logo {
+  &-header {
+    width: 32px;
+  }
+}

@@ -1,0 +1,31 @@
+extends sections/layout/layout
+block title
+	title Management
+
+block content
+	+main(true)
+		.row.pt-3.pt-lg-5
+			//- .col-md-4.pr-md-4.d-none.d-lg-block
+			//- 	include sections/user-panel/user-profile-control
+			.col-lg-8.mx-auto
+				.row
+					.col-12.col-md-4
+						+store-control
+					
+					//- .col-12
+					//- 	a.btn.btn-lg.btn-primary.fixed-top.fixed-lg-none.fixed-xl-none.mb-5.btn-block.rounded-0(href='create_new_post-step_1.html')
+					//- 		span.d-flex.align-items-center.justify-content-center
+					//- 			+icon('forward')
+					//- 			+icon('storefront')
+					//- 		small.text-uppercase Nhập kho
+					//- .col-12
+					//- 	include sections/user-panel/statistics
+					.col-12
+						
+					//- .col-12
+					//- 	include sections/table/user-kho
+					//- .col-12
+					//- 	include sections/table/user-cho
+								
+						
+										

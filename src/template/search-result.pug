@@ -1,0 +1,17 @@
+extends sections/layout/layout
+
+block title
+	title Search Result
+
+block content
+	+main(true)
+		.row.pt-3.pt-lg-5
+			.col-lg-8.mx-auto
+				h4.mb-5.d-none.d-md-flex Kết quả tìm kiếm
+				- var n = 1;
+				p Tìm được 
+					strong 10 
+					| người nghèo
+				.mb-3
+					while n <= 10
+						+user-card('poor',n++)

@@ -1,0 +1,19 @@
+extends sections/layout/layout
+block title
+	title History
+
+block content
+	+heading('Cài đặt', 'navigate_before','javascript:history.back()','',undefined)
+	+main()
+		.row.mt-3
+			.col-12
+				small.text-muted.d-block.mb-2 Đã cho vào 01/04/2020
+				- var n = 1;
+				.card-columns.mb-3
+					while n < 2
+						+user-card('poor',n++, true)
+				small.text-muted.d-block.mb-2 Đã cho vào 01/04/2020
+				- var n = 1;
+				.card-columns.mb-3
+					while n < 3
+						+user-card('poor', n++, true)

@@ -1,0 +1,30 @@
+extends sections/layout/layout
+//- +layout()
+
+block title
+	title Lịch sử quà tặng
+
+block content
+	+heading('Lịch sử quà tặng', 'navigate_before', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-lg-5.mt-3
+			.col-12
+				p Chọn quà từ danh sách quà đã tạo trước đó
+				+icon('gift display-4','fa')
+					+icon('check text-success display-4','fa')
+			.col-12
+				ul.list-unstyled.mb-3
+					li
+						small.text-muted.d-block.mb-2 Ngày tạo 01/04/2020
+						ul.list-unstyled.mb-3
+							li
+								+gift('export-step_2', 'true')
+					li
+						small.text-muted.d-block.mb-2 Ngày tạo 01/04/2020
+						ul.list-unstyled.mb-3
+							li
+								+gift('export-step_2')
+							li
+								+gift('export-step_2')
+				
+				//- include sections/table/user-kho

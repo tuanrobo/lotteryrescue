@@ -1,0 +1,21 @@
+#signUp.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLabel' aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-body.p-5
+				.d-flex.justify-content-between.mb-5
+					h5#exampleModalLabel.modal-title Đăng Ký
+					button.close(type='button' data-dismiss='modal' aria-label='Close')
+						span(aria-hidden='true') &times;
+				form
+					.form-group
+						label Địa chỉ Email
+						input.form-control.form-control-lg(type='email' aria-describedby='emailHelp')
+					.form-group
+						label Nhập mật khẩu
+						input.form-control.form-control-lg(type='password', placeholder='Tối thiểu 8 ký tự')
+					.form-group.form-check
+						input#exampleCheck1.form-check-input(type='checkbox')
+						label.form-check-label(for='exampleCheck1') Tôi đồng ý các điều khoản blah blah
+					.d-flex.justify-content-between
+						button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+						button.btn.btn-lg.btn-primary(type='submit') Đăng Ký			

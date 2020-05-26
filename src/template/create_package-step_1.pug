@@ -1,0 +1,59 @@
+extends sections/layout/layout
+
+block title
+	title Create New Post
+
+block content
+	include ./sections/modals/_goods_categories
+	+heading('Tôi muốn tặng', 'close', 'javascript:history.back()','',undefined)
+	+main()
+		.row.mt-lg-5
+			.col-12.col-lg-6.bg-white.mx-auto.pt-3
+				form.row
+					.col-12
+						.form-group
+							+input-lg('text','Nhập mặt hàng muốn tặng','Đường')
+						.form-group
+							label Số lượng
+							.input-group.row.no-gutters
+								.input-group-prepend.col-6
+									+input-lg('number','', 100)
+								+select-lg(none)(class='col-6')
+									option kg
+									option gram
+								.input-group-text / 1 phần
+						button.btn.btn-secondary.btn-lg.btn-block.mb-3 Chọn
+					.col-12
+						.card.p-0.mb-3
+							.list-group.list-group-flush.p-0
+								+link('list-group-item list-group-item-action d-flex justify-content-between align-items-center','import-step_2')
+									strong
+										+icon('check','fa')(class='text-success mr-3')
+										| Gạo: 
+										span 20 kg
+									+icon('minus','fa')
+								+link('list-group-item list-group-item-action d-flex justify-content-between align-items-center','import-step_2')
+									strong
+										+icon('check','fa')(class='text-success mr-3')
+										| Nước mắm: 
+										span 30 lít
+									+icon('minus','fa')
+								+link('list-group-item list-group-item-action d-flex justify-content-between align-items-center','import-step_2')
+									strong
+										+icon('check','fa')(class='text-success mr-3')
+										| Dầu ăn: 
+										span 10 chai (250ml)
+									+icon('minus','fa')
+			.col-12.fixed-bottom.mb-3
+				//- +link('btn btn-sm btn-secondary btn-block','#', 'goodsCategories')
+				//- 	| 0 món trong gói quà
+				+link('btn btn-lg btn-primary btn-block','create_package-step_3')
+					| Tiếp tục
+			//- .col-12.col-md-8.col-lg-6.mx-auto
+			//- 	+link('btn btn-success btn-block mb-5','#','goodsCategories')
+			//- 		| Chọn hàng cho vào giỏ quà
+		
+			//- 	h4 Tổng số hộp quà được tạo: 0
+					
+				
+

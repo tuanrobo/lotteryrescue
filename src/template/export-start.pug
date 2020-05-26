@@ -1,0 +1,24 @@
+extends sections/layout/layout
+//- +layout()
+
+block title
+	title Bắt đầu
+
+block content
+	+heading('Tặng quà', 'close', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-lg-5
+			.col-12.col-md-8.col-lg-6.mx-auto.card.p-3.p-sm-5.shadow-sm.border-0.mb-3
+				.row
+					.col-12
+						+icon('gifts','fa')(class='text-danger d-block text-center my-5 h1', style='font-size: 60px')
+						p Bạn đang tham gia chương trình từ thiện, để gửi quà đến người nhận bạn bắt đầu những bước sau.
+						p Team content hỗ trợ nhập nội dung giới thiệu cũng như hướng dẫn cho user mới bắt đầu tham gia tại đây nhé.
+			//- .col-12.d-flex.align-items-center.justify-content-center
+			//- 	span.mr-3 Bạn chưa tạo quà tặng?
+			//- 	+link('btn btn-link btn-outline-primary', 'create_package-step_1')
+			//- 		| Tạo quà
+	.col-12.fixed-bottom.mb-3
+		a.btn.btn-lg.btn-primary.btn-block(href='export-step_1.html') Bắt đầu
+
+

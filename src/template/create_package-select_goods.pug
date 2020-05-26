@@ -1,0 +1,30 @@
+extends sections/layout/layout
+
+block title
+	title Chọn quà
+
+block content
+	+heading('Gạo', 'navigate_before', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-3.pt-lg-5
+			.col-12.col-md-8.mx-auto.mb-5.d-none
+				ul.progressbar.list-unstyled
+					+progressBar('finished','Món cho')
+					+progressBar('finished','Địa chỉ')
+					+progressBar('active','Hoàn thành')
+			.col-12.col-md-6.mx-auto.card.p-3.p-lg-5.shadow-sm.border-0.mb-5
+				form
+					.row
+						.col-md-6.col-lg-12
+							.form-group
+								label Tôi muốn chia thành
+								.input-group
+									+input-lg('number','0')
+									.input-group-append
+										.input-group-text phần quà
+						.col-md-6
+							.form-group
+								label Tạm tính
+								+input-lg('number','')
+					+link('btn btn-lg btn-primary fixed-bottom rounded-0','#')
+						| Tiếp tục

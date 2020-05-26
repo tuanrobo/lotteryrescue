@@ -1,0 +1,29 @@
++modal-page-mobile('Tìm người nghèo')(id='search-mobile')
+	form
+		.form-group
+			+input-lg('text', 'Tìm theo số ĐT hoặc tên')
+		.form-group
+			label Tìm theo cấp độ
+			+select-lg('Cấp độ nghèo')
+				option 1
+				option 2
+				option 3
+		.form-group
+			label Tìm theo khu vực
+			+select-lg('Tỉnh/Thành phố')
+				option 1
+				option 2
+				option 3
+		.form-group
+			+select-lg('Quận/Huyện')
+				option 1
+				option 2
+				option 3
+		.form-group
+			+select-lg('Phường/Xã')
+				option 1
+				option 2
+				option 3
+		.form-group
+			a.btn.btn-lg.btn-primary.btn-block(href='search-result.html') Tìm
+			//- button.btn.btn-lg.btn-primary.btn-block(type='submit') Tìm

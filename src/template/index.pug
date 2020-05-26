@@ -1,0 +1,17 @@
+extends sections/layout/layout
+
+block title
+	title Trang chủ
+
+block content
+	+main(false)(class='d-flex align-items-center bg-white')
+		.row.d-flex.align-items-stretch.h-100
+			.col-10.col-lg-6.d-flex.align-items-end.mb-5.mb-lg-0.mx-auto
+				img.img-fluid(src='./images/donate.svg')
+			.col-lg-5.offset-lg-1.d-flex.align-items-center
+				.w-100
+					h2.font-weight-bold.mb-3.text-center.text-lg-left Chung Tay Giúp Đỡ Những Hoàn Cảnh Khó Khăn tại Việt Nam						
+					p.lead.mb-5.d-none.d-lg-block Với những món đồ dùng hoặc thực phẩm mà bạn có thể cho đi, hãy chia sẻ cho những hoàn cảnh khó khăn hơn, đây là điều đáng trân trọng chúng tôi rất cám ơn và hoan nghênh tấm lòng của bạn.								
+					a.btn.btn-lg.btn-primary.btn-block(href='sign_up.html') Tham gia ngay!
+					a.btn.btn-sm.btn-link.text-primary.btn-block(href='about.html') Tìm hiểu thêm
+				

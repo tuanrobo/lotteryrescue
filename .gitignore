@@ -1,5 +1,3 @@
 node_modules
 lotteryrescue.code-workspace
 package-lock.json
-src/*
-gulpfile.js

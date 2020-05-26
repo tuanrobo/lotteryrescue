@@ -1,0 +1,28 @@
+extends sections/layout/layout
+
+block title
+	title Create New Post
+
+block content
+	+heading('Hoàn Tất', '', undefined,'', undefined)
+	+main()
+		.row.pt-3.pt-lg-5
+			.col-12.col-md-8.mx-auto
+				.card.p-3.p-md-5.shadow.border-0.mb-5.text-center
+					.row
+						.col-12.mb-5
+							+icon('check-circle display-1 text-success my-5','fa')
+							h5.mb-3 Bạn vừa tạo quà thành công!
+						.col-12
+							//- +link('btn btn-lg btn-danger btn-block','create_package-step_1')
+							//- 	span.d-flex.align-items-center.justify-content-center
+							//- 		+icon('boxes','fa')(class='mr-4')
+							//- 		| Thêm vào gói quà vừa tạo
+							//- +link('btn btn-lg btn-secondary btn-block','user-management')
+							//- 	span.d-flex.align-items-center.justify-content-center
+							//- 		+icon('warehouse','fa')(class='mr-4')
+							//- 		| Quay lại kho
+						.col-12.fixed-bottom.mb-3
+							+link('btn btn-lg btn-primary btn-block','user-management')
+								+icon('warehouse','fa')(class='mr-4')
+								| Trở về kho

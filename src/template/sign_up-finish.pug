@@ -1,0 +1,26 @@
+extends sections/layout/layout
+
+block title
+	title Management
+
+block content
+	+heading('Hoàn tất đăng ký', '', undefined,'',undefined)
+	+main()
+		.row.pt-lg-5
+			.col-md-6.mx-auto.mb-4.card.w-100.shadow-sm.border-0.p-3.p-md-5
+				p.mb-2 Vui lòng cung cấp thông tin bên dưới để hoàn tất tạo hồ sơ của bạn.
+				form
+					.form-group
+						label Họ tên
+						+input-lg('text')
+					.form-group
+						label Email 
+							small.text-muted (Tuỳ chọn)
+						+input-lg('email')
+					.form-group
+						label Địa chỉ
+						+input-lg('text')
+					.form-group.form-check
+						input#loginAuto.form-check-input(type='checkbox')
+						label.form-check-label(for='loginAuto') Ẩn thông tin cá nhân
+					a.btn.btn-lg.btn-primary.btn-block.mb-4(href='user-management-init.html') Cập nhật

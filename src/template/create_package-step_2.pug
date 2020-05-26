@@ -1,0 +1,19 @@
+extends sections/layout/layout
+
+block title
+	title Số lượng quà
+
+block content
+	+heading('Số lượng quà', 'navigate_before', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-lg-5
+			.col-12.col-md-6.mx-auto.card.p-3.p-lg-5.shadow-sm.border-0.mb-5
+				form
+					.row
+						.col-md-6.col-lg-12
+							.form-group
+								label Nhập số lượng quà tặng
+								+input-lg('number','0')
+						.col-12.fixed-bottom.mb-3
+							+link('btn btn-lg btn-primary btn-block','create_package-step_3')
+								| Tạo

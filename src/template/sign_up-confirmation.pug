@@ -1,0 +1,17 @@
+extends sections/layout/layout
+
+block title
+	title Đăng ký
+
+block content
+	+heading('Nhập mã xác thực', 'navigate_before', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-lg-5.d-flex.align-items-center
+			.col-md-6.mx-auto.mb-4.card.w-100.shadow-lg.border-0.p-3.p-md-5
+				form
+					.form-group
+						label Vui lòng nhập mã xác thực vừa gửi cho số điện thoại 0907319164
+						+input-lg('number','SMS CODE')
+					+link('btn btn-lg btn-primary btn-block mb-4','sign_up-finish')
+						| Xác thực					
+					button.btn.btn-link.btn-block(type='submit', disabled) Gửi lại mã xác thực						

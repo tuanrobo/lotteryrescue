@@ -1,0 +1,16 @@
+form {
+    &.small {
+        label {
+            font-size: 20px;
+            font-weight: 800;
+            &.form-check-label {
+                font-size: small;
+                font-weight: normal;
+            }
+        }
+    }
+}
+
+.input-group-text {
+    border: none
+}

@@ -1,0 +1,64 @@
+extends sections/layout/layout
+block title
+	title Management
+
+block content
+	//- +store-control()(class='mb-5')
+	.col-12.fixed-bottom.mb-5.d-lg-none
+		//- +store-control()(class='mb-3')
+	+main(true)
+		.row.pt-3
+			.col-12.col-lg-6.mb-4.mb-lg-5
+				.card
+					.card-header.p-1
+						ul#pills-tab.nav.nav-pills.nav-justified(role='tablist')
+							li.nav-item(role='presentation')
+								a#pills-home-tab.nav-link.active(data-toggle='pill', href='#pills-home', role='tab', aria-controls='pills-home', aria-selected='true') Cho
+							li.nav-item(role='presentation')
+								a#pills-profile-tab.nav-link(data-toggle='pill', href='#pills-profile', role='tab', aria-controls='pills-profile', aria-selected='false') Nhận
+
+					#pills-tabContent.tab-content
+						#pills-home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='pills-home-tab')
+							ul.list-group.list-group-flush
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									span.text-black-50 Gạo
+									span 100kg
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									span.text-black-50 Dầu ăn
+									span 200 chai (250ml)
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									span.text-black-50 Dầu ăn
+									span 10 chai (1 Lít)
+								li.list-group-item.d-flex.justify-content-between.align-items-center
+									span.text-black-50 Quần áo
+									span 10 bộ			
+						#pills-profile.tab-pane.fade(role='tabpanel', aria-labelledby='pills-profile-tab')
+								.text-center.p-3 Chưa nhận quà
+
+			.col-12.col-lg-6.mb-4.mb-lg-5
+				+subHeading('Thành tích')
+				.list-group
+					.list-group-item
+						p.mb-1
+							+icon('heart text-danger mr-3','fa')
+							+icon('heart text-danger mr-3','fa')
+							+icon('heart text-danger mr-3','fa')
+							+icon('heart text-danger mr-3','fa')
+							+icon('heart text-danger mr-3','fa')
+							small.text-muted (5 tim+)
+
+					.list-group-item
+						p.mb-1
+							+icon('medal text-success mr-3','fa')
+							+icon('medal text-success mr-3','fa')
+							+icon('medal text-success mr-3','fa')
+							small.text-muted (3 huy hiệu +)
+
+			.col-12.col-lg-6.mb-4.mb-lg-5
+				+subHeading('Đang theo dõi')
+				- var n = 1;
+					.mb-3
+						while n < 7
+							+user-card('poor',n++)
+
+			//- include sections/table/user-cho

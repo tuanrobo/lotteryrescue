@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    // font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    color: $primary-color;
+}
+
+.jumbotron {
+    background-color: $primary-color;
+}
+
+.form-group, .input-group {
+    label {
+        font-weight: 600;
+    }
+    .form-control, .custom-select {
+        background-color: #f3f3f4;
+        border: none;        
+    }  
+    &.form-check {
+        label {
+            font-weight: 400 !important;
+        }        
+    }
+}
+
+.input-group {
+    .input-group-prepend {
+        & >.input-group-text {
+            background-color: #f3f3f4;
+        }
+    }
+}
+
+
+.btn {
+    font-weight: 600;
+    &-primary {
+        background-color: $primary-color;
+        border: $primary-color;
+        &:hover {
+            background-color:$secondary-color;
+        }
+    }
+    &-link {
+        color: $primary-color;
+        &:hover {
+            color:$secondary-color;
+        }
+    }
+    &-outline {
+        &-primary {
+            border-color: $primary-color
+        }
+    }
+}
+
+
+.bg {
+    &-primary {
+        background-color: $primary-color !important;        
+    }
+    // &-light {
+    //     background-color: rgba(179, 176, 185, 0.9) !important;
+    // }
+}
+
+.text {
+    &-primary {
+        color: $primary-color !important;
+    }
+}
+
+
+.nav-pills{
+    .nav-link {
+        &.active {
+            background-color: $primary-color;
+        }
+    }
+
+}

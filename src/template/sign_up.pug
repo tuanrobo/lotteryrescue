@@ -1,0 +1,30 @@
+extends sections/layout/layout
+
+block title
+	title Đăng ký
+
+block content
+	+heading('Đăng ký', 'close', 'javascript:history.back()','', undefined)
+	+main()
+		.row.pt-lg-5.d-flex.align-items-center
+			.col-md-6.mx-auto.mb-4.card.w-100.shadow-sm.border-0.p-3.p-md-5
+				form
+					.form-group
+						label Nhập số điện thoại
+						+input-lg('tel','', '0908124966')(class='is-valid', id='test', required)
+						.valid-feedback
+							| Đã nhập đúng!
+							
+					.form-group
+						label Chọn mật khẩu
+						+input-lg('password','Tối thiểu 8 ký tự')(class='is-invalid')
+						.invalid-feedback
+							| Chưa nhập mật khẩu
+					.form-group.form-check
+						input#exampleCheck1.form-check-input(type='checkbox')
+						label.form-check-label(for='exampleCheck1') Tôi đồng ý các điều khoản blah blah
+					a.btn.btn-lg.btn-primary.btn-block.mb-4(href='sign_up-confirmation.html') Đăng Ký
+					small.form-text.text-muted Ở bước tiếp theo bạn sẽ nhận được mã xác nhận số điện thoại gửi qua SMS
+			.col-12.d-flex.align-items-center.justify-content-center
+				span.mr-3 Bạn đã có tài khoản?
+				a.btn.btn-link.btn-outline-primary(href='sign_in.html') Đăng nhập

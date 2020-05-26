@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		block title
+			title Default Title
+		link(rel="stylesheet", href="./css/bootstrap/bootstrap.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css")
+		link(rel="stylesheet", href="./css/style.css")
+		link(rel="stylesheet", href="./css/animate.css")
+
+	body.bg-light.d-flex.flex-column
+		include .././_mixin
+		//- MOBILE DISPLAY CONTENT
+		include ../modals/_notifications-mobile
+		include ../modals/_import-export-mobile
+		include ../modals/_more-mobile
+		include ../modals/_search-mobile
+		//- CONTENT
+		block content
+		
+		//- FOOTER
+		+footer()
+		include ../_scripts

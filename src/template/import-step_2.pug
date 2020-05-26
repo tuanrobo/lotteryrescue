@@ -1,0 +1,36 @@
+extends sections/layout/layout
+
+block title
+	title Create New Post
+
+block content
+	+heading('Thực phẩm', 'navigate_before', 'javascript:history.back()','',undefined)
+	+main()
+		.row.pt-lg-5
+			.col-12.col-md-6.mx-auto.card.p-3.p-lg-5.shadow-sm.border-0.mb-5
+				form
+					.row
+						.col-md-6.col-lg-12
+							.form-group
+								label Thực phẩm
+								+input-lg('text','vd: Gạo')
+						.col-md-6.col-lg-12
+							.form-group
+								label Tổng số bạn có
+								.input-group.row.no-gutters
+									.input-group-prepend.col-6
+										+input-lg('number','', 100)
+									+select-lg(none)(class='col-6')
+										option kg
+										option gram
+						.col-md-6
+							.form-group
+								label Số lượng, khối lượng / 1 phần quà
+								.input-group.row.no-gutters
+									.input-group-prepend.col-6
+										+input-lg('number','0.00')
+									+select-lg(none)(class='col-6')
+										option gram
+										option kg
+						.col-12
+							a.btn.btn-lg.btn-primary.btn-block.fixed-bottom(href='import-finish.html') Hoàn thành

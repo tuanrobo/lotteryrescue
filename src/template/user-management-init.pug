@@ -1,0 +1,52 @@
+extends sections/layout/layout
+block title
+	title Management
+
+block content	
+	+main(true)
+		.row.pt-3
+			//- .col-md-4.pr-md-4.d-none.d-lg-block
+			//- 	include sections/user-panel/user-profile-control
+			//- .col-12.mb-3
+				
+					
+					//- .col-12
+					//- 	a.btn.btn-lg.btn-primary.fixed-top.fixed-lg-none.fixed-xl-none.mb-5.btn-block.rounded-0(href='create_new_post-step_1.html')
+					//- 		span.d-flex.align-items-center.justify-content-center
+					//- 			+icon('forward')
+					//- 			+icon('storefront')
+					//- 		small.text-uppercase Nhập kho
+					//- .col-12
+					//- 	include sections/user-panel/statistics
+				
+			.col-lg-6.mx-lg-auto
+				//- +info('blank', 'gift', '')
+				.card.shadow-sm
+					.card-body
+						h3.mb-3.text-center Hướng dẫn sử dụng
+						dl.row
+							dt.col-2
+								h4
+									.badge.badge-primary.badge-pill 1
+							dd.col-10 Chạm nút 
+								span.btn.btn-primary.btn-sm.shadow-sm Cho quà 
+								|  bên dưới
+							dt.col-2
+								h4
+									.badge.badge-primary.badge-pill 2
+							dd.col-10 Chọn quà bạn muốn tặng
+							dt.col-2
+								h4
+									.badge.badge-primary.badge-pill 3
+							dd.col-10 Nhập số điện thoại người nhận và lấy mã SMS từ người nhận
+							dt.col-2
+								h4
+									.badge.badge-primary.badge-pill 4
+							dd.col-10 🤟, bạn đã giúp đỡ một hoàn cảnh
+						.fixed-bottom.fixed-lg-bottom-none.mb-5.mb-lg-0.mx-3.mx-lg-0
+							+store-control()(class='mb-3')
+			
+				//- include sections/table/user-cho
+						
+						
+										

@@ -1,0 +1,14 @@
+extends sections/layout/layout
+
+block title
+	title User Page
+
+block content	
+	+main(true)
+		.row
+			.col-md-4.pr-md-4
+				//- include sections/side-left/user-profile
+			.col-md-8
+				.card
+					.card-body
+						h1 Đây là trang profile của User							

@@ -1,0 +1,18 @@
+extends sections/layout/layout
+
+block title
+	title Xem tất cả
+
+block content
+	+main(false)
+		.row.pt-3.pt-lg-5
+			.col-md-8
+				.row
+					.col-12
+						h4.mb-5.d-flex
+							i.material-icons.mr-3.text-danger favorite
+							| Nhà giải cứu mới						
+						- var n = 1;
+						.card-columns.mb-3
+							while n < 14
+								+user-card('poor',n++)
