@@ -6,6 +6,7 @@ const gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	plumber = require('gulp-plumber'),
+	del = require('del'),
 	{ src, dest, series, watch } = require('gulp');
 
 sass.compiler = require('node-sass');
@@ -75,11 +76,16 @@ const copyLibrary = () => {
 // 	});
 // }
 
+const delFolder = () => {
+	del.sync('build/sources')
+}
+
 const watcher = () => {
 	watch('src/images/**/*.*',images);
 	watch('src/js/**/*.js', js);
-	watch('src/template/*.pug', html);
+	watch(['src/template/*.pug','src/template/*.*/*.pug'], html);
 	watch('src/scss/**/*.scss', style);
+	watch('build/sources', delFolder)
 }
 
 var build = series(copyLibrary, images,js, fonts, watcher)

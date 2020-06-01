@@ -17,9 +17,22 @@ block content
 						label Email 
 							small.text-muted (Tuỳ chọn)
 						+input-lg('email')
-					.form-group
-						label Địa chỉ
-						+input-lg('text')
+					.form-row
+						.col-lg-12.mb-3
+							label Địa chỉ
+							+input-lg('text')
+						.col-lg-12.mb-3
+							label.sr-only Thành phố/Tỉnh
+							select.form-control.form-control-lg
+								option Thành phố/Tỉnh
+						.col-lg-6.mb-3
+							label.sr-only Quận/Huyện
+							select.form-control.form-control-lg
+								option Quận/Huyện							
+						.col-lg-6.mb-3
+							label.sr-only Phường
+							select.form-control.form-control-lg
+								option Phường/Xã
 					.form-group.form-check
 						input#loginAuto.form-check-input(type='checkbox')
 						label.form-check-label(for='loginAuto') Ẩn thông tin cá nhân

@@ -38,14 +38,14 @@ a {
 .jumbotron {
   background-color: #3BA89D; }
 
-.form-group label, .input-group label {
+.form-group label, .input-group label, .form-row label {
   font-weight: 600; }
 
-.form-group .form-control, .form-group .custom-select, .input-group .form-control, .input-group .custom-select {
+.form-group .form-control, .form-group .custom-select, .input-group .form-control, .input-group .custom-select, .form-row .form-control, .form-row .custom-select {
   background-color: #f3f3f4;
   border: none; }
 
-.form-group.form-check label, .input-group.form-check label {
+.form-group.form-check label, .input-group.form-check label, .form-row.form-check label {
   font-weight: 400 !important; }
 
 .input-group .input-group-prepend > .input-group-text {
